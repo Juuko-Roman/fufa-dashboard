@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/fufaDashboardCss-home.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://kit.fontawesome.com/a372109b3a.js" crossorigin="anonymous"></script>
+	<title>VODS</title>
+	<style>
+
+		.search{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			z-index: 1;
+
+		}
+		.sidebar{
+			margin-block-start: 20px;
+			margin-top: 80px;
+
+		}
+		.table{
+			font-family: Arial, sans-serif;
+			border-collapse: collapse;
+			width: 80px;
+			margin: 90px;
+			margin-top: ;
+		}
+		td,th{
+			text-align: left;
+			padding: 8px;
+		}
+		.td, th{
+			border: 1px solid #dddddd;
+			text-align: left;
+			padding: 8px;
+			background-color: rgb(43, 172, 211); 
+		} 
+		.tr:nth-child(even) {
+			background-color: #dddddd;
+		}
+
+
+
+		.me{
+			background-color: rgb(214, 214, 235);
+			float: right;
+			border-radius: 15px;
+			cursor: pointer;
+
+		}
+		.ee{
+			background-color: rgb(246, 248, 250);
+		}
+		.se{
+			background-color: rgb(209, 210, 211);
+		}
+
+		.br{
+			background-color: rgb(93, 165, 228);
+		}
+		.footer{
+			background-color: #d1cccc;
+			width: 77%;
+			float: right;
+		}
+		.switch{
+			position: relative;
+			display: inline-block;
+			width: 60px;
+			height: 34px;
+		}
+		.switch input{
+			opacity: 0;
+			width: 0;
+			height: 0;
+		}
+		.slider{
+			position: absolute;
+			cursor: pointer;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background-color: #66888d;
+			-webkit-transition: 4s;
+			transition: 4s;
+			border-radius: 15px;
+			height: 25px;
+			width: 50px;
+		}
+		.slider:before{
+			position: absolute;
+			content: "";
+			height: 20px;
+			width: 26px;
+			left: 4px;
+			bottom: 4px;
+			background-color: blue;
+			-webkit-transition: 4s;
+			transition: .4s;
+			border-radius: 11px;
+		}
+
+
+		input:checked + .slider::before{
+			-webkit-transition: translateX(26px);
+			-ms-transform: translateX(26px);
+			transform: translateX(26px);
+		}
+		.slider.round{
+			border-radius: 30%;
+		}
+		.navbar{
+			justify-content: space-between;
+			display: flex;
+			align-items: center;
+			background-color: rgb(234, 239, 240);
+
+		}
+		 ul{
+			display: flex;
+			font-size: 20px;
+			border-radius: 12px;
+		}
+		 li{
+			list-style-type: none;
+		}
+		 li a{
+			text-decoration: none;
+			display: block;
+			padding: 1rem;
+			color: rgb(75, 73, 73);
+		}
+		 li a:hover{
+			text-decoration: underline;
+			color: rgb(8, 141, 230);
+
+		}
+		
+	</style>
+</head>
+<body>
+	
+	<div class="leftSmall">
+		<div class="logo">
+			<img src="images/Fufa-logo.png" alt="logo" >
+			<hr style="border: 1px solid #DBD8F4;  margin: 10px 5% 0 5%; " >
+		</div>
+
+		<div class="menu">
+			<div class="menu-title">MENU</div>
+			<a href="index.html">
+				<div class="menu-items">
+					<div class="menu-icon"><i class="fa fa-th-large"></i></div>
+					<div class="menu-desc">Dashboard</div>
+				</div>
+			</a>
+			<a href="livestreams.html">
+				<div class="menu-items">
+					<div class="menu-icon"><i class="fa fa-television"></i></div>
+					<div class="menu-desc">Live Streams</div>
+				</div>
+			</a>
+			<a href="vods.html">
+				<div class="menu-items">
+					<div class="menu-icon"><i class="fa fa-desktop"></i></div>
+					<div class="menu-desc">Vods</div>
+				</div>
+			</a>
+			<a href="subscribers.html">
+				<div class="menu-items">
+					<div class="menu-icon"><i class="fa fa-users"></i></div>
+					<div class="menu-desc">Subscribers</div>
+				</div>
+			</a>
+			<a href="subscriptions.html">
+				<div class="menu-items">
+					<div class="menu-icon"><i class="fa fa-caret-square-o-down" aria-hidden="true"></i></div>
+					<div class="menu-desc">Subscriptions</div>
+				</div>
+			</a>
+			<a href="settings.html">
+				<div class="menu-items">
+					<div class="menu-icon"><i class="fa fa-cog"></i></div>
+					<div class="menu-desc">Settings</div>
+				</div>
+			</a>
+			<a href="admins.html">
+				<div class="menu-items">
+					<div class="menu-icon"><i class="fa-sharp fa-solid fa-shield-halved"></i></div>
+					<div class="menu-desc">Admins</div>
+				</div>
+			</a>
+		</div>
+	</div>
+	<div class="rightBig">
+		<div class="navigation">
+			<div class="dashboard-title">
+				Videos
+			</div>
+			<!-- <ul >
+				<table class="ge" >
+					<tr>
+						<div class="hr">
+							<div class="hr-body"><td><li><a href="index.html">Samba</a></li></td></div>
+						</div>
+						<div class="ha">
+							<div class="ha-body"><td><li><a href="jasha.html">Jasha</a></li></td></div>
+						</div>
+						<div class="ho">
+							<div class="ho-body"><td><li><a href="Bingwa.html" >Bingwa</a></li></td></div>
+						</div>
+						<div class="li">
+							<div class="ho-body"><td><li><a href="Free.html" >Free</a></li></td></div>
+						</div>
+					</tr>
+				</table>
+				</ul> -->
+				<div class="search">
+					<i class="fa fa-search" ></i>
+					<input type="text" placeholder="Search here">
+				</div>
+
+				<div class="adduser-subscribers_page">
+					<div>Add Video</div>
+					<div><i class="fa fa-plus-circle" style="font-size: 20px;"></i></div>
+				</div>
+				<div style=" margin-top: 110px;">
+					<hr style="border: 1px solid #DBD8F4;  margin: 10px 1% 0px 1%; " >
+				</div>
+			</div>
+			
+			<div class="main">
+				<table class="you" style="width:100%;">
+					<tr style="background-color: rgb(24, 176, 223); border: 1px; text-align: left;">
+						<td style="color: white;">ID</td>
+						<td style="color: white;">Image</td>
+						<td style="color: white;">Title</td>
+						<td style="color: white;">Input URL</td>
+						<td style="color: white; " colspan="4">Details</td>
+					</tr>
+					<tr>
+						<td>0</td>
+						<td><img src="./cranes.jpeg" alt="FUFA" style="width: 200px; height: 120px; border-radius: 10px;"></td>
+						<td>  <h4 style="color: blue;">Uganda cranes Vs Angola</h4> <br>FUFA Media Engagement on the status <br> of Football in Uganda at Jevine Hotel Lubaga, Kampala</td>
+						<td>http//streamnydeug.com/ugtv <br>flussonic/index.m3ub</td>
+						<td>view:200k <br>Date:2years ago</td>
+						<td><i class="fa-solid fa-trash" style="color: red;"></i></td>
+						<td><i class="fa-regular fa-pen-to-square" style="color: blue;"></i></td>
+						<td><div class="mode">              
+							<label class="switch">
+								<input type="checkbox">
+								<span class="slider round"></span>
+							</label>
+						</div></td>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td><img src="./cranes.jpeg" alt="FUFA" style="width: 200px; height: 120px; border-radius: 10px;"></td>
+						<td> <h4 style="color: blue;">Uganda cranes Vs Angola</h4> <br>FUFA Media Engagement on the status <br> of Football in Uganda at Jevine Hotel Lubaga, Kampala</td>
+						<td>http//streamnydeug.com/ugtv <br>flussonic/index.m3ub</td>
+						<td>view:200k <br>Date:2years ago</td>
+						<td><i class="fa-solid fa-trash"  style="color: red;"></i></td>
+						<td><i class="fa-regular fa-pen-to-square" style="color: blue;"></i></td>
+						<td><div class="mode">
+							<label class="switch">
+								<input type="checkbox">
+								<span class="slider round"></span>
+							</label>
+						</div></td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td><img src="./cranes.jpeg" alt="FUFA" style="width: 200px; height: 120px; border-radius: 10px;"></td>
+						<td> <h4 style="color: blue;">Uganda cranes Vs Angola</h4> <br>FUFA Media Engagement on the status <br> of Football in Uganda at Jevine Hotel Lubaga, Kampala</td>
+						<td>http//streamnydeug.com/ugtv <br>flussonic/index.m3ub</td>
+						<td>view:200k <br>Date:2years ago</td>
+						<td><i class="fa-solid fa-trash"  style="color: red;"></i></td>
+						<td><i class="fa-regular fa-pen-to-square" style="color: blue;"></i></td>
+						<td><div class="mode">
+							<label class="switch">
+								<input type="checkbox">
+								<span class="slider round"></span>
+							</label>
+						</div></td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td><img src="./cranes.jpeg" alt="FUFA" style="width: 200px; height: 120px; border-radius: 10px;"></td>
+						<td> <h4 style="color: blue;">Uganda Cranes Vs Angola</h4> <br>FUFA Media Engagement on the status <br> of Football in Ugandam at Jevine Hotel Lubaga, Kampala</td>
+						<td>http//streamnydeug.com/ugtv <br>flussionic/index.m3ub</td>
+						<td>view:200k <br>Date:2years ago</td>
+						<td><i class="fa-solid fa-trash"  style="color: red;"></i></td>
+						<td><i class="fa-regular fa-pen-to-square" style="color: blue;"></i></td>
+						<td><div class="mode">
+							<label class="switch">
+								<input type="checkbox">
+								<span class="slider round"></span>
+							</label>
+						</div></td>
+					</tr>
+					<tr>
+						<td>4</td>
+						<td><img src="./cranes.jpeg" alt="FUFA" style="width:200px; height: 120px; border-radius: 10px;"></td>
+						<td> <h4 style="color: blue;"> Uganda Cranes Vs Angola</h4>  <p>FUFA Media Engagement on the status </p> of Football in Uganda at Jevine Hotel Luganda, Kampala</td>
+						<td>http//streamnydeug.com/ugtv <br>flussonic/index.m3ub</td>
+						<td>view:200k <br>Date:2years ago</td>
+						<td><i class="fa-solid fa-trash"  style="color: red;"></i></td>
+						<td><i class="fa-regular fa-pen-to-square" style="color: blue;"></i></td> 
+						<td><div class="mode">
+							<label class="switch">
+								<input type="checkbox">
+								<span class="slider round"></span>
+							</label>
+						</div></td>
+					</tr>
+					<tr>
+						<td>5</td>
+						<td><img src="./cranes.jpeg" alt="FUFA" style="width: 200px; height: 120px; border-radius: 10px;"></td>
+						<td> <h4 style="color: blue;">Uganda Cranes Vs Angola</h4> <br> FUFA Media Engagement on the status <br> of Football in Uganda at Jevine Hotel Lubaga. Kampala</td>
+						<td>http//streamnydeug.com/ugtv <br>flussonic/index.m3ub</td>
+						<td>view:200k <br>Date:2years ago</td>
+						<td><i class="fa-solid fa-trash"  style="color: red;"></i></td>
+						<td><i class="fa-regular fa-pen-to-square" style="color: blue;"></i></td>
+						<td><div class="mode">
+							<label class="switch">
+								<input type="checkbox">
+								<span class="slider round"></span>
+							</label>
+						</div></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+	</body>
+	</html>
