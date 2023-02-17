@@ -135,7 +135,7 @@ left:  300px;
 .search{
 	float: left;
 	width: 28%;
-/*	border: 2px solid green;*/
+	border: 2px solid green;
 	border-radius: 10px;
 /*	height: 100px;*/
 	background-color: #fff;
@@ -152,7 +152,7 @@ input[type=text]{
 .mode{
 	float: left;
 	width: 30%;
-/*	border: 2px solid green;*/
+	border: 2px solid green;
 	padding: 10px 0px 10px 130px;
 /*	height: 100px;*/
 }
@@ -175,7 +175,7 @@ input[type=text]{
 	
 	float: right;
 	width: 14%;
-/*	border: 2px solid green;*/
+	border: 2px solid green;
 /*	height: 100px;*/
 }
 .profile-image{
@@ -586,4 +586,102 @@ border-radius: 20px;
 
 .slider.round:before {
 border-radius: 50%;
+}
+.livestream-row{
+/*	border: 2px solid red;*/
+	padding: 10px 0;
+	height: 320px;
+
+	
+
+}
+
+.single-card{
+	width: 350px;
+	height: 300px;
+float: left;
+/*	border: 2px solid green;*/
+	margin-right: 20px;
+}
+.livestream-row .single-card:last-child{
+margin-right: 2%;
+}
+.livestream-row .single-card:first-child{
+margin-left: 4%;
+}
+
+.livestream-row::after{
+	content: "";
+	clear: both;
+	display: table;
+}
+.upper-aection{
+	height: 75%;
+/*	border: 2px solid black;*/
+	font-size: 20px;
+	color: #B3AEE2;
+	margin-bottom: 10px;
+	background-color: #EEEDF8;
+	box-shadow: 0 4px 10px #777;
+
+}
+.upper-aection img{
+	float: left;
+	display: block;
+	width: 80%;
+	height: 100%;
+}
+.upper-aection div{
+	width: 20%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	padding: 30px 0;
+	float: left;
+/*	border: 2px solid orange;*/
+	height: 100%;
+	background-color: #EEEDF8;
+}
+.upper-aection i{
+	display: block;
+
+}
+.upper-aection::after {
+	content: "";
+display: table;
+clear: both;
+}
+
+.lower-section{
+	height: 25%;
+/*	border: 2px solid yellow;*/
+}
+.lower-section::after {
+	content: "";
+display: table;
+clear: both;
+}
+.tv-name{
+/*	border: 2px solid pink;*/
+	color: #707070;
+	font-size: 25px;
+	font-weight: bold;
+	padding: 0px 0 5px 0;
+}
+.lowest-div{
+	display: flex;
+	justify-content: space-between;
+/*	border: 2px solid pink;*/
+	color: #787878;
+	font-size: 18px;
+	padding: 5px 0 0px 0;
+}
+.upper-aection div{
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+.single-card, .upper-aection, .upper-aection img{
+	border-radius: 10px;
+	
 }
