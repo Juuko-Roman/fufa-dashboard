@@ -106,9 +106,35 @@ left:  300px;
 	padding: 8px 0;
 	
 }
+.vods-categories{
+		float: left;
+	
+	border: 2px solid #B6B2E3;
+	margin-right: 120px;
+	margin-top: 12px;
+	border-right: none;
+
+
+/*	height: 100px;*/
+
+
+}
+.vods-categories div{
+	float: left;
+	font-size: 20px;
+	font-weight: bold;
+	color: #A4A3A7;
+	padding: 11px 50px;
+	border-right: 2px solid #B6B2E3;
+}
+.vods-categories div:hover{
+	background-color: #027BC4;
+	color: white;
+}
+
 .search{
 	float: left;
-	width: 38%;
+	width: 28%;
 /*	border: 2px solid green;*/
 	border-radius: 10px;
 /*	height: 100px;*/
@@ -455,6 +481,9 @@ padding: 15px ;
 border-right: 1px solid #fff;
 font-weight: bold;
 font-size: 20px;
+  text-align: left;
+  background-color: #027BC4;
+  color: white;
 }
 #subscribers_table td {
   border-bottom: 1px solid #aaa;
@@ -475,13 +504,7 @@ font-size: 20px;
 	background-color: #D9E3E9;
 }
 
-#subscribers_table th {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  text-align: left;
-  background-color: #027BC4;
-  color: white;
-}
+
 #subscribers_table input{
 	width: 20px;
 	height: 20px;

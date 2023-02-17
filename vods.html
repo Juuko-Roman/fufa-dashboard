@@ -9,63 +9,40 @@
 	<title>VODS</title>
 	<style>
 
-		.search{
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			z-index: 1;
-
-		}
-		.sidebar{
-			margin-block-start: 20px;
-			margin-top: 80px;
-
-		}
-		.table{
-			font-family: Arial, sans-serif;
+		
+		#vods_table {
 			border-collapse: collapse;
-			width: 80px;
-			margin: 90px;
-			margin-top: ;
+			width: 100%;
 		}
-		td,th{
+		#vods_table th {
+			padding: 15px ;
+			border-right: 1px solid #fff;
+			font-weight: bold;
+			font-size: 20px;
 			text-align: left;
-			padding: 8px;
+			background-color: #027BC4;
+			color: white;
 		}
-		.td, th{
-			border: 1px solid #dddddd;
-			text-align: left;
-			padding: 8px;
-			background-color: rgb(43, 172, 211); 
-		} 
-		.tr:nth-child(even) {
-			background-color: #dddddd;
+		tr>td:first-child{
+			font-size: 25px;
+			text-align: center;
+			font-weight: bold;
+			color: #707070;
 		}
-
-
-
-		.me{
-			background-color: rgb(214, 214, 235);
-			float: right;
-			border-radius: 15px;
-			cursor: pointer;
-
+		tr td{
+			padding-top: 10px;
+			color: #B1B2B2;
+			font-size: 18px;
 		}
-		.ee{
-			background-color: rgb(246, 248, 250);
+		tr td h4{
+			font-size: 20px;
+			color: #027BC4;
 		}
-		.se{
-			background-color: rgb(209, 210, 211);
+		tr td span{
+			color: #707070;
+			font-weight: bold;
 		}
 
-		.br{
-			background-color: rgb(93, 165, 228);
-		}
-		.footer{
-			background-color: #d1cccc;
-			width: 77%;
-			float: right;
-		}
 		.switch{
 			position: relative;
 			display: inline-block;
@@ -113,32 +90,7 @@
 		.slider.round{
 			border-radius: 30%;
 		}
-		.navbar{
-			justify-content: space-between;
-			display: flex;
-			align-items: center;
-			background-color: rgb(234, 239, 240);
-
-		}
-		 ul{
-			display: flex;
-			font-size: 20px;
-			border-radius: 12px;
-		}
-		 li{
-			list-style-type: none;
-		}
-		 li a{
-			text-decoration: none;
-			display: block;
-			padding: 1rem;
-			color: rgb(75, 73, 73);
-		}
-		 li a:hover{
-			text-decoration: underline;
-			color: rgb(8, 141, 230);
-
-		}
+		
 		
 	</style>
 </head>
@@ -198,143 +150,130 @@
 	</div>
 	<div class="rightBig">
 		<div class="navigation">
-			<div class="dashboard-title">
+			<div class="dashboard-title" style="margin-top:12px">
 				Videos
 			</div>
-			<!-- <ul >
-				<table class="ge" >
-					<tr>
-						<div class="hr">
-							<div class="hr-body"><td><li><a href="index.html">Samba</a></li></td></div>
-						</div>
-						<div class="ha">
-							<div class="ha-body"><td><li><a href="jasha.html">Jasha</a></li></td></div>
-						</div>
-						<div class="ho">
-							<div class="ho-body"><td><li><a href="Bingwa.html" >Bingwa</a></li></td></div>
-						</div>
-						<div class="li">
-							<div class="ho-body"><td><li><a href="Free.html" >Free</a></li></td></div>
-						</div>
-					</tr>
-				</table>
-				</ul> -->
-				<div class="search">
-					<i class="fa fa-search" ></i>
-					<input type="text" placeholder="Search here">
-				</div>
-
-				<div class="adduser-subscribers_page">
-					<div>Add Video</div>
-					<div><i class="fa fa-plus-circle" style="font-size: 20px;"></i></div>
-				</div>
-				<div style=" margin-top: 110px;">
-					<hr style="border: 1px solid #DBD8F4;  margin: 10px 1% 0px 1%; " >
-				</div>
+			<div class="vods-categories">
+				<div>Samba</div>
+				<div>Jasho</div>
+				<div>Bingwa</div>
 			</div>
-			
-			<div class="main">
-				<table class="you" style="width:100%;">
-					<tr style="background-color: rgb(24, 176, 223); border: 1px; text-align: left;">
-						<td style="color: white;">ID</td>
-						<td style="color: white;">Image</td>
-						<td style="color: white;">Title</td>
-						<td style="color: white;">Input URL</td>
-						<td style="color: white; " colspan="4">Details</td>
-					</tr>
-					<tr>
-						<td>0</td>
-						<td><img src="./cranes.jpeg" alt="FUFA" style="width: 200px; height: 120px; border-radius: 10px;"></td>
-						<td>  <h4 style="color: blue;">Uganda cranes Vs Angola</h4> <br>FUFA Media Engagement on the status <br> of Football in Uganda at Jevine Hotel Lubaga, Kampala</td>
-						<td>http//streamnydeug.com/ugtv <br>flussonic/index.m3ub</td>
-						<td>view:200k <br>Date:2years ago</td>
-						<td><i class="fa-solid fa-trash" style="color: red;"></i></td>
-						<td><i class="fa-regular fa-pen-to-square" style="color: blue;"></i></td>
-						<td><div class="mode">              
-							<label class="switch">
-								<input type="checkbox">
-								<span class="slider round"></span>
-							</label>
-						</div></td>
-					</tr>
-					<tr>
-						<td>1</td>
-						<td><img src="./cranes.jpeg" alt="FUFA" style="width: 200px; height: 120px; border-radius: 10px;"></td>
-						<td> <h4 style="color: blue;">Uganda cranes Vs Angola</h4> <br>FUFA Media Engagement on the status <br> of Football in Uganda at Jevine Hotel Lubaga, Kampala</td>
-						<td>http//streamnydeug.com/ugtv <br>flussonic/index.m3ub</td>
-						<td>view:200k <br>Date:2years ago</td>
-						<td><i class="fa-solid fa-trash"  style="color: red;"></i></td>
-						<td><i class="fa-regular fa-pen-to-square" style="color: blue;"></i></td>
-						<td><div class="mode">
-							<label class="switch">
-								<input type="checkbox">
-								<span class="slider round"></span>
-							</label>
-						</div></td>
-					</tr>
-					<tr>
-						<td>2</td>
-						<td><img src="./cranes.jpeg" alt="FUFA" style="width: 200px; height: 120px; border-radius: 10px;"></td>
-						<td> <h4 style="color: blue;">Uganda cranes Vs Angola</h4> <br>FUFA Media Engagement on the status <br> of Football in Uganda at Jevine Hotel Lubaga, Kampala</td>
-						<td>http//streamnydeug.com/ugtv <br>flussonic/index.m3ub</td>
-						<td>view:200k <br>Date:2years ago</td>
-						<td><i class="fa-solid fa-trash"  style="color: red;"></i></td>
-						<td><i class="fa-regular fa-pen-to-square" style="color: blue;"></i></td>
-						<td><div class="mode">
-							<label class="switch">
-								<input type="checkbox">
-								<span class="slider round"></span>
-							</label>
-						</div></td>
-					</tr>
-					<tr>
-						<td>3</td>
-						<td><img src="./cranes.jpeg" alt="FUFA" style="width: 200px; height: 120px; border-radius: 10px;"></td>
-						<td> <h4 style="color: blue;">Uganda Cranes Vs Angola</h4> <br>FUFA Media Engagement on the status <br> of Football in Ugandam at Jevine Hotel Lubaga, Kampala</td>
-						<td>http//streamnydeug.com/ugtv <br>flussionic/index.m3ub</td>
-						<td>view:200k <br>Date:2years ago</td>
-						<td><i class="fa-solid fa-trash"  style="color: red;"></i></td>
-						<td><i class="fa-regular fa-pen-to-square" style="color: blue;"></i></td>
-						<td><div class="mode">
-							<label class="switch">
-								<input type="checkbox">
-								<span class="slider round"></span>
-							</label>
-						</div></td>
-					</tr>
-					<tr>
-						<td>4</td>
-						<td><img src="./cranes.jpeg" alt="FUFA" style="width:200px; height: 120px; border-radius: 10px;"></td>
-						<td> <h4 style="color: blue;"> Uganda Cranes Vs Angola</h4>  <p>FUFA Media Engagement on the status </p> of Football in Uganda at Jevine Hotel Luganda, Kampala</td>
-						<td>http//streamnydeug.com/ugtv <br>flussonic/index.m3ub</td>
-						<td>view:200k <br>Date:2years ago</td>
-						<td><i class="fa-solid fa-trash"  style="color: red;"></i></td>
-						<td><i class="fa-regular fa-pen-to-square" style="color: blue;"></i></td> 
-						<td><div class="mode">
-							<label class="switch">
-								<input type="checkbox">
-								<span class="slider round"></span>
-							</label>
-						</div></td>
-					</tr>
-					<tr>
-						<td>5</td>
-						<td><img src="./cranes.jpeg" alt="FUFA" style="width: 200px; height: 120px; border-radius: 10px;"></td>
-						<td> <h4 style="color: blue;">Uganda Cranes Vs Angola</h4> <br> FUFA Media Engagement on the status <br> of Football in Uganda at Jevine Hotel Lubaga. Kampala</td>
-						<td>http//streamnydeug.com/ugtv <br>flussonic/index.m3ub</td>
-						<td>view:200k <br>Date:2years ago</td>
-						<td><i class="fa-solid fa-trash"  style="color: red;"></i></td>
-						<td><i class="fa-regular fa-pen-to-square" style="color: blue;"></i></td>
-						<td><div class="mode">
-							<label class="switch">
-								<input type="checkbox">
-								<span class="slider round"></span>
-							</label>
-						</div></td>
-					</tr>
-				</table>
+			<div class="search"style="margin-top:15px" >
+				<i class="fa fa-search" ></i>
+				<input type="text" placeholder="Search here">
+			</div>
+
+			<div class="adduser-subscribers_page">
+				<div>Add Video</div>
+				<div><i class="fa fa-plus-circle" style="font-size: 20px;"></i></div>
+			</div>
+			<div style=" margin-top: 110px;">
+				<hr style="border: 1px solid #DBD8F4;  margin: 10px 1% 0px 1%; " >
 			</div>
 		</div>
 
-	</body>
-	</html>
+		<div class="main">
+			<table class="you" id="vods_table">
+				<tr>
+					<th style="color: white;">ID</th>
+					<th style="color: white;">Image</th>
+					<th style="color: white;">Title</th>
+					<th style="color: white;">Input URL</th>
+					<th style="color: white; " colspan="4">Details</th>
+				</tr>
+				<tr>
+					<td>0</td>
+					<td><img src="images/cranes.jpeg" alt="FUFA" style="width: 200px; height: 120px; border-radius: 10px;"></td>
+					<td>  <h4 >Uganda cranes Vs Angola</h4> <br>FUFA Media Engagement on the status <br> of Football in Uganda at Jevine Hotel Lubaga, Kampala</td>
+					<td>http//streamnydeug.com/ugtv <br>flussonic/index.m3ub</td>
+					<td><span>View:</span> 200k <br><span>Date:</span> 2 years ago</td>
+					<td><i class="fa-solid fa-trash" style="color: red;"></i></td>
+					<td><i class="fa-regular fa-pen-to-square" style="color: blue;"></i></td>
+					<td><div class="mode">              
+						<label class="switch">
+							<input type="checkbox">
+							<span class="slider round"></span>
+						</label>
+					</div></td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td><img src="images/cranes.jpeg" alt="FUFA" style="width: 200px; height: 120px; border-radius: 10px;"></td>
+					<td> <h4 >Uganda cranes Vs Angola</h4> <br>FUFA Media Engagement on the status <br> of Football in Uganda at Jevine Hotel Lubaga, Kampala</td>
+					<td>http//streamnydeug.com/ugtv <br>flussonic/index.m3ub</td>
+					<td><span>View:</span> 200k <br><span>Date:</span> 2 years ago</td>
+					<td><i class="fa-solid fa-trash"  style="color: red;"></i></td>
+					<td><i class="fa-regular fa-pen-to-square" style="color: blue;"></i></td>
+					<td><div class="mode">
+						<label class="switch">
+							<input type="checkbox">
+							<span class="slider round"></span>
+						</label>
+					</div></td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td><img src="images/cranes.jpeg" alt="FUFA" style="width: 200px; height: 120px; border-radius: 10px;"></td>
+					<td> <h4 >Uganda cranes Vs Angola</h4> <br>FUFA Media Engagement on the status <br> of Football in Uganda at Jevine Hotel Lubaga, Kampala</td>
+					<td>http//streamnydeug.com/ugtv <br>flussonic/index.m3ub</td>
+					<td><span>View:</span> 200k <br><span>Date:</span> 2 years ago</td>
+					<td><i class="fa-solid fa-trash"  style="color: red;"></i></td>
+					<td><i class="fa-regular fa-pen-to-square" style="color: blue;"></i></td>
+					<td><div class="mode">
+						<label class="switch">
+							<input type="checkbox">
+							<span class="slider round"></span>
+						</label>
+					</div></td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td><img src="images/cranes.jpeg" alt="FUFA" style="width: 200px; height: 120px; border-radius: 10px;"></td>
+					<td> <h4 >Uganda Cranes Vs Angola</h4> <br>FUFA Media Engagement on the status <br> of Football in Ugandam at Jevine Hotel Lubaga, Kampala</td>
+					<td>http//streamnydeug.com/ugtv <br>flussionic/index.m3ub</td>
+					<td><span>View:</span> 200k <br><span>Date:</span> 2 years ago</td>
+					<td><i class="fa-solid fa-trash"  style="color: red;"></i></td>
+					<td><i class="fa-regular fa-pen-to-square" style="color: blue;"></i></td>
+					<td><div class="mode">
+						<label class="switch">
+							<input type="checkbox">
+							<span class="slider round"></span>
+						</label>
+					</div></td>
+				</tr>
+				<tr>
+					<td>4</td>
+					<td><img src="images/cranes.jpeg" alt="FUFA" style="width:200px; height: 120px; border-radius: 10px;"></td>
+					<td> <h4 > Uganda Cranes Vs Angola</h4>  <p>FUFA Media Engagement on the status </p> of Football in Uganda at Jevine Hotel Luganda, Kampala</td>
+					<td>http//streamnydeug.com/ugtv <br>flussonic/index.m3ub</td>
+					<td><span>View:</span> 200k <br><span>Date:</span> 2 years ago</td>
+					<td><i class="fa-solid fa-trash"  style="color: red;"></i></td>
+					<td><i class="fa-regular fa-pen-to-square" style="color: blue;"></i></td> 
+					<td><div class="mode">
+						<label class="switch">
+							<input type="checkbox">
+							<span class="slider round"></span>
+						</label>
+					</div></td>
+				</tr>
+				<tr>
+					<td>5</td>
+					<td><img src="images/cranes.jpeg" alt="FUFA" style="width: 200px; height: 120px; border-radius: 10px;"></td>
+					<td> <h4 >Uganda Cranes Vs Angola</h4> <br> FUFA Media Engagement on the status <br> of Football in Uganda at Jevine Hotel Lubaga. Kampala</td>
+					<td>http//streamnydeug.com/ugtv <br>flussonic/index.m3ub</td>
+					<td><span>View:</span> 200k <br><span>Date:</span> 2 years ago</td>
+					<td><i class="fa-solid fa-trash"  style="color: red;"></i></td>
+					<td><i class="fa-regular fa-pen-to-square" style="color: blue;"></i></td>
+					<td><div class="mode">
+						<label class="switch">
+							<input type="checkbox">
+							<span class="slider round"></span>
+						</label>
+					</div></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+
+</body>
+</html>
