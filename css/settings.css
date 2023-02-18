@@ -1,122 +1,58 @@
 
-.navbar {
-    background-color: #fff;
-	width: 100%;
-	padding: 0px 0px 7px 0px;
-	margin-left: 0;
-	border-bottom: 2px solid #ddd ;
-/*	padding: 30px 0px;*/
-	
-}
-
-nav ul {
-    
-/*	width: 100%;*/
-/*	border: 2px solid green;*/
-	padding: 0;
-	margin: 0;
-	
-}
-
-nav li {
-    display: inline;
-    height: 100%;
-    width: 16.666667%;
-	float: left;
-/*	border: 2px solid red;*/
-	font-size: 25px;
-
-    padding: 8px 0;
-    padding-left: 6%;
-
-}
-nav li:hover{
-	background-color: #027BC4;
-	color: white;
-}
-nav li:hover a{
-	color: white;
-}
-nav li i{
-	margin-left: 10px;
-	margin-top: 10px;
-	margin-bottom: 5px;
-
-}
-nav ul::after{
-	content: '';
-	clear: both;
-	display: table;
-}
-
-nav li a {
-    font-family: sans-serif;
-    color: black;
-    font-size: 18px;
-    text-decoration: none;
+.container input[type=text], .container select,.container textarea {
+  width: 70%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
 
 }
 
+.container label {
+  padding: 12px 50px 12px 12px ;
+/*  display: inline-block;*/
+text-align: right;
+width: 100%;
+/*  border: 2px solid red;*/
+}
 
-input[type=text], textarea{
-	width: 80%;
-	padding: 12px;
-	border: 1px solid #ccc;
-	border-radius: 4px;
-	box-sizing: border-box;
-	height: 80%;
-  }
-  
-  
-  label {
-	padding: 12px 12px 12px 0;
-	display: inline-block;
-  }
-  
-  
-  input[type=submit] {
-	background-color: #04AA6D;
-	color: white;
-	padding: 12px 20px;
-	border: none;
-	border-radius: 4px;
-	cursor: pointer;
-	float: right;
-  }
-  
- 
-  .container {
-	top: 30px;
-	border-radius: 5px;
-	background-color: #ccc;
-	padding: 20px;
-	margin-left: auto;
-	margin-right: auto;
-	height: 800px;
-	width: 1500px;
-  }
-  
- 
-  .row {
-	float: left;
-	width: 25%;
-	margin-top: 6px;
-  }
-  
-  .column {
-	float: left;
-	width: 75%;
-	margin-top: 6px;
-  }
-  
 
-  .table:after {
-	content: "";
-	display: table;
-	clear: both;
-  }
-  
+.container {
+	margin: 1% 10%;
+  border-radius: 10px;
+  background-color: #DBDBE6;
+  padding: 20px;
+/*  border: 2px solid red;*/
+}
+.container h3{
+	padding-left: 160px;
+}
+.col-25 {
+/*  border: 2px solid green;*/
+  width: 25%;
+  margin-top: 6px;
+  display: flex;
+  align-items: right;
+  flex-direction: row;
+}
 
+.col-75 {
+/*border: 2px solid green;*/
+  width: 75%;
+  margin-top: 6px;
+}
+.row{
+	display: flex;
+	flex-direction: row;
+	margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 	.table-data{
 		/*	border: 2px solid green;*/
 				background-color: white;

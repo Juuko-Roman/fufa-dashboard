@@ -13,24 +13,38 @@
 		.navigation{
 /*	width: 100%;*/
 /*	border: 2px solid blue;*/
-	padding: 0px 0px 0px 0px;
-	position: fixed;
-	background-color: #F2F0FF;
-	min-width: 1620px;
+padding: 0px 0px 0px 0px;
+position: fixed;
+background-color: #F2F0FF;
+min-width: 1620px;
 
-	
+
 
 }
 .dashboard-title{
 	display: block;
 	width: 100%;
 	padding: 20px 0 20px 10px;
-	float: none;
+	float: none;    
 	border-bottom: 1px solid #eee;
 	background-color: white;
 
 }
-	</style>
+.main{
+	position: fixed;
+	width: 85%;
+/*	border: 2px solid green;*/
+	margin-top: 162px;
+	height: 80%;
+	overflow: auto;
+	
+}
+.main::after{
+	content: '';
+	clear: both;
+	display: table;
+}
+</style>
 
 </head>
 <body>
@@ -93,349 +107,350 @@
 			<div class="dashboard-title">
 				Settings
 			</div>
-			<div class="navbar">
+		
 				<nav>
 					<ul>
-						<li onclick="changeScreen(1)"><i class="fa fa-cog"></i><br><a class="active">About</a></li>
-						<li onclick="changeScreen(2)"><i class="fa fa-cog"></i><br><a class="active">Updates</a></li>
+						<li onclick="changeScreen(1)"><i class="fa fa-exclamation-circle"></i><br><a class="active">About</a></li>
+						<li onclick="changeScreen(2)"><i class="fa fa-clock-o"></i><br><a class="active">Updates</a></li>
 						<li onclick="changeScreen(3)"><i class="fa fa-cog"></i><br><a class="active">Cat Settings</a></li>
 						<li onclick="changeScreen(4)"><i class="fa fa-cog"></i><br><a class="active">Payment Gateway</a></li>
-						<li onclick="changeScreen(5)"><i class="fa fa-cog"></i><br><a class="active">Theme settings</a></li>
+						<li onclick="changeScreen(5)"><i class="fa fa-eyedropper"></i><br><a class="active">Theme settings</a></li>
 						<li onclick="changeScreen(6)"><i class="fa fa-cog"></i><br><a class="active">Privacy</a></li>
 					</ul>
-					</nav>
-			</div>
+				</nav>
+			
 			
 		</div>
 
-			
-			<div class="main">
-				<script>
-					function changeScreen(n){
-                        
+
+		<div class="main">
+			<script>
+				function changeScreen(n){
+
 					switch(n){
-                       case 1:
+					case 1:
 						//Get data from backend
-					   document.getElementById('about').innerHTML=`
-        <div class="container">
-
-			<br><br>
-
-			<h3>FUFA MEDIA</h3><br><br><br><br>
+						document.getElementById('about').innerHTML=`
+						<div class="container">
   <form action="">
-    <div class="table">
-      <div class="row">
-        <label for="app">App title</label>
-      </div>
-      <div class="column">
-        <input type="text" id="app" name="app" placeholder="">
-      </div>
+  <h3>Fufa Media</h3>
+  <div class="row">
+    <div class="col-25">
+      <label for="">App Title</label>
     </div>
-    <div class="table">
-      <div class="row">
-        <label for="app">App Version</label>
-      </div>
-      <div class="column">
-        <input type="text" id="app" name="app" placeholder="">
-      </div>
+    <div class="col-75">
+      <input type="text" id="" name="" value="Your name.." readonly>
     </div>
-    <div class="table">
-      <div class="row">
-        <label for="contact">Contact</label>
-      </div>
-      <div class="column">
-     <textarea id="contact" name="contact" placeholder=""></textarea>
-      </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="lname">Last Name</label>
     </div>
-    <div class="table">
-      <div class="row">
-        <label for="email">Email</label>
-      </div>
-      <div class="column">
-        <textarea id="email" name="email" placeholder=""></textarea>
-      </div>
+    <div class="col-75">
+      <input type="text" id="lname" name="lastname" value="Your last name.." readonly>
     </div>
-
-	<div class="table">
-      <div class="row">
-        <label for="copyright">Copyright year</label>
-      </div>
-      <div class="column">
-        <textarea id="copyright" name="copyright" placeholder=""></textarea>
-      </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="fname">First Name</label>
     </div>
-	<div class="table">
-      <div class="row">
-        <label for="app">App Description</label>
-      </div>
-      <div class="column">
-		<textarea name="" id="" cols="30" rows="20"></textarea>
-      </div>
+    <div class="col-75">
+      <input type="text" id="fname" name="firstname" value="Your name.." readonly>
     </div>
-
-    
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="lname">Last Name</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="lname" name="lastname" value="Your last name.." readonly>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="fname">First Name</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="fname" name="firstname" value="Your name.." readonly>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="lname">Last Name</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="lname" name="lastname" value="Your last name.." readonly>
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="col-25">
+      <label for="subject">Subject</label>
+    </div>
+    <div class="col-75">
+      <textarea id="subject" name="subject" value="Write something.." style="height:200px" readonly></textarea>
+    </div>
+  </div>
+  <br>
   </form>
 </div>
-				
-				
-										`
-					   break;
 
-					   
-					   case 2:
+						`
+						break;
+
+
+					case 2:
 						
 
 						document.getElementById('about').innerHTML=`
-                              
+
 						<form action="">
-				<h3>App Update</h3>
-				
-				
-
-				<div class="container">
-
-<br><br>
-
-<h3>App Update</h3><br><br><br><br>
-
-<form action="">
-<div class="table">
-<div class="row">
-	<label for="">Enable/Disable</label>
-</div>
-<div class="column">
-	<label class="switch">
-					<input type="checkbox">
-					<span class="slider round"></span>
-				</label>
-
-				<label>Disabled</label>
-</div>
-</div>
-<div class="table">
-<div class="row">
-<label for="update">Update Title</label>
-</div>
-<div class="column">
-<input type="text" id="update" name="update" placeholder="">
-</div>
-</div>
-<div class="table">
-<div class="row">
-<label for="version">Update version</label>
-</div>
-<div class="column">
-<textarea id="version" name="version" placeholder=""></textarea>
-</div>
-</div>
-<div class="table">
-<div class="row">
-<label for="android">Android link</label>
-</div>
-<div class="column">
-<textarea id="android" name="android" placeholder=""></textarea>
-</div>
-</div>
-
-<div class="table">
-<div class="row">
-<label for="ios">Ios Link</label>
-</div>
-<div class="column">
-<textarea id="ios" name="ios" placeholder=""></textarea>
-</div>
-</div>
-<div class="table">
-<div class="row">
-<label for="update">Update Description</label>
-</div>
-<div class="column">
-<textarea name="" id="update" cols="30" rows="20"></textarea>
-</div>
-</div>
+						<h3>App Update</h3>
 
 
-</form>
-</div>
-	
-	      
-			
-	  </form>
-				
-										`
-					   break;
-					   case 3:
-					   document.getElementById('about').innerHTML=`
-					   
-  
-	<div class="table-data">
-	
-		<div class="row" style="background-color: white;">
-			<div class="add-padding-top">Samba</div>
-			<div class="add-padding-top"><p>Make a samba payement of 500UGX</p></div>
-			<div class="add-padding-top">500 UGX</div>
-			<div class="add-padding-top">Basic</div>
-			<div class="add-padding-top"><i class="fa fa-pencil" aria-hidden="true"></i></div>
-		</div>
-		<div class="row" style="background-color: #f2f0ff;">
-			<div class="add-padding-top">Samba</div>
-			<div class="add-padding-top"><p>Make a samba payement of 500UGX</p></div>
-			<div class="add-padding-top">500 UGX</div>
-			<div class="add-padding-top">Basic</div>
-			<div class="add-padding-top"><i class="fa fa-pencil" aria-hidden="true"></i></div>
-		</div>
-		<div class="row" style="background-color: white;">
-			<div class="add-padding-top">Samba</div>
-			<div class="add-padding-top"><p>Make a samba payement of 500UGX</p></div>
-			<div class="add-padding-top">500 UGX</div>
-			<div class="add-padding-top">Basic</div>
-			<div class="add-padding-top"><i class="fa fa-pencil" aria-hidden="true"></i></div>
-		</div>
-		<div class="row" style="background-color: #f2f0ff;">
-			<div class="add-padding-top">Samba</div>
-			<div class="add-padding-top"><p>Make a samba payement of 500UGX</p></div>
-			<div class="add-padding-top">500 UGX</div>
-			<div class="add-padding-top">Basic</div>
-			<div class="add-padding-top"><i class="fa fa-pencil" aria-hidden="true"></i></div>
-		</div>
-		<div class="row" style="background-color: white;">
-			<div class="add-padding-top">Samba</div>
-			<div class="add-padding-top"><p>Make a samba payement of 500UGX</p></div>
-			<div class="add-padding-top">500 UGX</div>
-			<div class="add-padding-top">Basic</div>
-			<div class="add-padding-top"><i class="fa fa-pencil" aria-hidden="true"></i></div>
-		</div>
-		<div class="row" style="background-color: #f2f0ff;">
-			<div class="add-padding-top">Samba</div>
-			<div class="add-padding-top"><p>Make a samba payement of 500UGX</p></div>
-			<div class="add-padding-top">500 UGX</div>
-			<div class="add-padding-top">Basic</div>
-			<div class="add-padding-top"><i class="fa fa-pencil" aria-hidden="true"></i></div>
-		</div>
-		<div class="row" style="background-color: #f2f0ff;">
-			<div class="add-padding-top">Samba</div>
-			<div class="add-padding-top"><p>Make a samba payement of 500UGX</p></div>
-			<div class="add-padding-top">500 UGX</div>
-			<div class="add-padding-top">Basic</div>
-			<div class="add-padding-top"><i class="fa fa-pencil" aria-hidden="true"></i></div>
-		</div>
-		<div class="row" style="background-color: white;">
-			<div class="add-padding-top">Samba</div>
-			<div class="add-padding-top"><p>Make a samba payement of 500UGX</p></div>
-			<div class="add-padding-top">500 UGX</div>
-			<div class="add-padding-top">Basic</div>
-			<div class="add-padding-top"><i class="fa fa-pencil" aria-hidden="true"></i></div>
-		</div>
-		<div class="row" style="background-color: #f2f0ff;">
-			<div class="add-padding-top">Samba</div>
-			<div class="add-padding-top"><p>Make a samba payement of 500UGX</p></div>
-			<div class="add-padding-top">500 UGX</div>
-			<div class="add-padding-top">Basic</div>
-			<div class="add-padding-top"><a href="edit.html"></a><i class="fa fa-pencil" aria-hidden="true"></i></div>
-		</div>
-		<div class="row" style="background-color: white;">
-			<div class="add-padding-top">Samba</div>
-			<div class="add-padding-top"><p>Make a samba payement of 500UGX</p></div>
-			<div class="add-padding-top">500 UGX</div>
-			<div class="add-padding-top">Basic</div>
-			<div class="add-padding-top"><i class="fa fa-pencil" aria-hidden="true"></i></div>
-		</div>
-		<div class="row" style="background-color: #f2f0ff;">
-			<div class="add-padding-top">Samba</div>
-			<div class="add-padding-top"><p>Make a samba payement of 500UGX</p></div>
-			<div class="add-padding-top">500 UGX</div>
-			<div class="add-padding-top">Basic</div>
-			<div class="add-padding-top"><i class="fa fa-pencil" aria-hidden="true"></i></div>
-		</div>
-		<div class="row" style="background-color: #f2f0ff;">
-			<div class="add-padding-top">Samba</div>
-			<div class="add-padding-top"><p>Make a samba payement of 500UGX</p></div>
-			<div class="add-padding-top">500 UGX</div>
-			<div class="add-padding-top">Basic</div>
-			<div class="add-padding-top"><i class="fa fa-pencil" aria-hidden="true"></i></div>
-		</div>
-		<div class="row" style="background-color: white;">
-			<div class="add-padding-top">Samba</div>
-			<div class="add-padding-top"><p>Make a samba payement of 500UGX</p></div>
-			<div class="add-padding-top">500 UGX</div>
-			<div class="add-padding-top">Basic</div>
-			<div class="add-padding-top"><i class="fa fa-pencil" aria-hidden="true"></i></div>
-		</div>
-		<div class="row" style="background-color: #f2f0ff;">
-			<div class="add-padding-top">Samba</div>
-			<div class="add-padding-top"><p>Make a samba payement of 500UGX</p></div>
-			<div class="add-padding-top">500 UGX</div>
-			<div class="add-padding-top">Basic</div>
-			<div class="add-padding-top"><i class="fa fa-pencil" aria-hidden="true"></i></div>
-		</div>
-		<div class="row" style="background-color: white;">
-			<div class="add-padding-top">Samba</div>
-			<div class="add-padding-top"><p>Make a samba payement of 500UGX</p></div>
-			<div class="add-padding-top">500 UGX</div>
-			<div class="add-padding-top">Basic</div>
-			<div class="add-padding-top"><i class="fa fa-pencil" aria-hidden="true"></i></div>
-		</div>
-		</div>
-		
-		`
-					   
+
+						<div class="container">
+
+						<br><br>
+
+						<h3>App Update</h3><br><br><br><br>
+
+						<form action="">
+						<div class="table">
+						<div class=".col-25">
+						<label for="">Enable/Disable</label>
+						</div>
+						<div class=".col-75">
+						<label class="switch">
+						<input type="checkbox">
+						<span class="slider round"></span>
+						</label>
+
+						<label>Disabled</label>
+						</div>
+						</div>
+						<div class="table">
+						<div class=".col-25">
+						<label for="update">Update Title</label>
+						</div>
+						<div class=".col-75">
+						<input type="text" id="update" name="update" placeholder="">
+						</div>
+						</div>
+						<div class="table">
+						<div class=".col-25">
+						<label for="version">Update version</label>
+						</div>
+						<div class=".col-75">
+						<textarea id="version" name="version" placeholder=""></textarea>
+						</div>
+						</div>
+						<div class="table">
+						<div class=".col-25">
+						<label for="android">Android link</label>
+						</div>
+						<div class=".col-75">
+						<textarea id="android" name="android" placeholder=""></textarea>
+						</div>
+						</div>
+
+						<div class="table">
+						<div class=".col-25">
+						<label for="ios">Ios Link</label>
+						</div>
+						<div class=".col-75">
+						<textarea id="ios" name="ios" placeholder=""></textarea>
+						</div>
+						</div>
+						<div class="table">
+						<div class=".col-25">
+						<label for="update">Update Description</label>
+						</div>
+						<div class=".col-75">
+						<textarea name="" id="update" cols="30" .col-25s="20"></textarea>
+						</div>
+						</div>
+
+
+						</form>
+						</div>
+
+
+
+						</form>
+
+						`
+						break;
+					case 3:
+						document.getElementById('about').innerHTML=`
+
+
+						<div class="table-data">
+
+						<div class=".col-25" style="background-color: white;">
+						<div class="add-padding-top">Samba</div>
+						<div class="add-padding-top"><p>Make a samba payement of 500UGX</p></div>
+						<div class="add-padding-top">500 UGX</div>
+						<div class="add-padding-top">Basic</div>
+						<div class="add-padding-top"><i class="fa fa-pencil" aria-hidden="true"></i></div>
+						</div>
+						<div class=".col-25" style="background-color: #f2f0ff;">
+						<div class="add-padding-top">Samba</div>
+						<div class="add-padding-top"><p>Make a samba payement of 500UGX</p></div>
+						<div class="add-padding-top">500 UGX</div>
+						<div class="add-padding-top">Basic</div>
+						<div class="add-padding-top"><i class="fa fa-pencil" aria-hidden="true"></i></div>
+						</div>
+						<div class=".col-25" style="background-color: white;">
+						<div class="add-padding-top">Samba</div>
+						<div class="add-padding-top"><p>Make a samba payement of 500UGX</p></div>
+						<div class="add-padding-top">500 UGX</div>
+						<div class="add-padding-top">Basic</div>
+						<div class="add-padding-top"><i class="fa fa-pencil" aria-hidden="true"></i></div>
+						</div>
+						<div class=".col-25" style="background-color: #f2f0ff;">
+						<div class="add-padding-top">Samba</div>
+						<div class="add-padding-top"><p>Make a samba payement of 500UGX</p></div>
+						<div class="add-padding-top">500 UGX</div>
+						<div class="add-padding-top">Basic</div>
+						<div class="add-padding-top"><i class="fa fa-pencil" aria-hidden="true"></i></div>
+						</div>
+						<div class=".col-25" style="background-color: white;">
+						<div class="add-padding-top">Samba</div>
+						<div class="add-padding-top"><p>Make a samba payement of 500UGX</p></div>
+						<div class="add-padding-top">500 UGX</div>
+						<div class="add-padding-top">Basic</div>
+						<div class="add-padding-top"><i class="fa fa-pencil" aria-hidden="true"></i></div>
+						</div>
+						<div class=".col-25" style="background-color: #f2f0ff;">
+						<div class="add-padding-top">Samba</div>
+						<div class="add-padding-top"><p>Make a samba payement of 500UGX</p></div>
+						<div class="add-padding-top">500 UGX</div>
+						<div class="add-padding-top">Basic</div>
+						<div class="add-padding-top"><i class="fa fa-pencil" aria-hidden="true"></i></div>
+						</div>
+						<div class=".col-25" style="background-color: #f2f0ff;">
+						<div class="add-padding-top">Samba</div>
+						<div class="add-padding-top"><p>Make a samba payement of 500UGX</p></div>
+						<div class="add-padding-top">500 UGX</div>
+						<div class="add-padding-top">Basic</div>
+						<div class="add-padding-top"><i class="fa fa-pencil" aria-hidden="true"></i></div>
+						</div>
+						<div class=".col-25" style="background-color: white;">
+						<div class="add-padding-top">Samba</div>
+						<div class="add-padding-top"><p>Make a samba payement of 500UGX</p></div>
+						<div class="add-padding-top">500 UGX</div>
+						<div class="add-padding-top">Basic</div>
+						<div class="add-padding-top"><i class="fa fa-pencil" aria-hidden="true"></i></div>
+						</div>
+						<div class=".col-25" style="background-color: #f2f0ff;">
+						<div class="add-padding-top">Samba</div>
+						<div class="add-padding-top"><p>Make a samba payement of 500UGX</p></div>
+						<div class="add-padding-top">500 UGX</div>
+						<div class="add-padding-top">Basic</div>
+						<div class="add-padding-top"><a href="edit.html"></a><i class="fa fa-pencil" aria-hidden="true"></i></div>
+						</div>
+						<div class=".col-25" style="background-color: white;">
+						<div class="add-padding-top">Samba</div>
+						<div class="add-padding-top"><p>Make a samba payement of 500UGX</p></div>
+						<div class="add-padding-top">500 UGX</div>
+						<div class="add-padding-top">Basic</div>
+						<div class="add-padding-top"><i class="fa fa-pencil" aria-hidden="true"></i></div>
+						</div>
+						<div class=".col-25" style="background-color: #f2f0ff;">
+						<div class="add-padding-top">Samba</div>
+						<div class="add-padding-top"><p>Make a samba payement of 500UGX</p></div>
+						<div class="add-padding-top">500 UGX</div>
+						<div class="add-padding-top">Basic</div>
+						<div class="add-padding-top"><i class="fa fa-pencil" aria-hidden="true"></i></div>
+						</div>
+						<div class=".col-25" style="background-color: #f2f0ff;">
+						<div class="add-padding-top">Samba</div>
+						<div class="add-padding-top"><p>Make a samba payement of 500UGX</p></div>
+						<div class="add-padding-top">500 UGX</div>
+						<div class="add-padding-top">Basic</div>
+						<div class="add-padding-top"><i class="fa fa-pencil" aria-hidden="true"></i></div>
+						</div>
+						<div class=".col-25" style="background-color: white;">
+						<div class="add-padding-top">Samba</div>
+						<div class="add-padding-top"><p>Make a samba payement of 500UGX</p></div>
+						<div class="add-padding-top">500 UGX</div>
+						<div class="add-padding-top">Basic</div>
+						<div class="add-padding-top"><i class="fa fa-pencil" aria-hidden="true"></i></div>
+						</div>
+						<div class=".col-25" style="background-color: #f2f0ff;">
+						<div class="add-padding-top">Samba</div>
+						<div class="add-padding-top"><p>Make a samba payement of 500UGX</p></div>
+						<div class="add-padding-top">500 UGX</div>
+						<div class="add-padding-top">Basic</div>
+						<div class="add-padding-top"><i class="fa fa-pencil" aria-hidden="true"></i></div>
+						</div>
+						<div class=".col-25" style="background-color: white;">
+						<div class="add-padding-top">Samba</div>
+						<div class="add-padding-top"><p>Make a samba payement of 500UGX</p></div>
+						<div class="add-padding-top">500 UGX</div>
+						<div class="add-padding-top">Basic</div>
+						<div class="add-padding-top"><i class="fa fa-pencil" aria-hidden="true"></i></div>
+						</div>
+						</div>
+
+						`
+
 						
-					   break;
-					   case 4:
-					   document.getElementById('about').innerHTML=`
-					
-					   <form>
-			<h3>Update Samba basic rates</h3>
-			
-				<label>Public key</label>
-				<input type="text" placeholder=""><br><br>
-				<label>Secret</label>
-				<input type="text" placeholder=""><br><br>
-				<label>Encryption key</label>
-				<input type="text" placeholder=""><br><br>
-				
-		
-				<input type="button" placeholder="Update" style="width:100px;">
-					   `
-					   break;
-					   case 5:
-					   document.getElementById('about').innerHTML=``
-					   break;
-					
+						break;
+					case 4:
+						document.getElementById('about').innerHTML=`
+
+						<form>
+						<h3>Update Samba basic rates</h3>
+
+						<label>Public key</label>
+						<input type="text" placeholder=""><br><br>
+						<label>Secret</label>
+						<input type="text" placeholder=""><br><br>
+						<label>Encryption key</label>
+						<input type="text" placeholder=""><br><br>
+
+
+						<input type="button" placeholder="Update" style="width:100px;">
+						`
+						break;
+					case 5:
+						document.getElementById('about').innerHTML=``
+						break;
+
 
 					case 6:
-					document.getElementById('about').innerHTML=`
-					<p>
-			A privacy policy is a document that explains how an organization handles any customer, client or employee information gathered in its operations.
+						document.getElementById('about').innerHTML=`
+						<p>
+						// A privacy policy is a document that explains how an organization handles any customer, client or employee information gathered in its operations.
 
-Most websites make their privacy policies available to site visitors.  A privacy page should specify any Personally identifiable information that is gathered, <br>
-such as name, address and credit card number, as well as other things like order history, browsing habits, uploads and downloads.  <br>
- policy should also explain if data may be left on a user’s computer, such as cookies. According to best practices, the policy should disclose if data may be shared with or sold to third parties and if so, what the purpose is.
+						Most websites make their privacy policies available to site visitors.  A privacy page should specify any Personally identifiable information that is gathered, <br>
+						such as name, address and credit card number, as well as other things like order history, b.col-25sing habits, uploads and downloads.  <br>
+						policy should also explain if data may be left on a user’s computer, such as cookies. According to best practices, the policy should disclose if data may be shared with or sold to third parties and if so, what the purpose is.
 
-There is no concensus as to whether or not privacy policies are legally binding and no consistency in enforcement.<br>  
-In the United States, the Federal Trade Commission (FTC) promotes enforcement of existing laws and industry self-regulation.<br>  
-Generally for the FTC, data breaches are not sufficient for legal action if there is no loss of money associated with the breach.  
+						There is no concensus as to whether or not privacy policies are legally binding and no consistency in enforcement.<br>  
+						In the United States, the Federal Trade Commission (FTC) promotes enforcement of existing laws and industry self-regulation.<br>  
+						Generally for the FTC, data breaches are not sufficient for legal action if there is no loss of money associated with the breach.  
 
-The European Union’s Data Protection Directive has confronted companies such as Google about privacy changes that went contrary to E.U. law, threatening sanctions on the massive company.
+						The European Union’s Data Protection Directive has confronted companies such as Google about privacy changes that went contrary to E.U. law, threatening sanctions on the massive company.
 
-Often, the first statement found in an online privacy policy is one to the effect that,<br>
- by visiting the web page (which you are doing if you’re reading the policy), you agree to the details of the site’s privacy policy.
-		</p>
-	`
-					
+						Often, the first statement found in an online privacy policy is one to the effect that,<br>
+						by visiting the web page (which you are doing if you’re reading the policy), you agree to the details of the site’s privacy policy.
+						</p>
+						`
+
 					}
 					
 				}
-				</script>
-				<!-- about -->
-			 <div class="About" id="about">
+			</script>
+			<!-- about -->
+			<div class="About" id="about">
 
-		</div>
-	
+			</div>
 
-	
-		
-  </div>
+
+
 
 		</div>
 	

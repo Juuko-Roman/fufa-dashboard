@@ -10,7 +10,8 @@ body{
 
 /*	float: left;*/
 display: inline-block;
-	width: 300px;
+/*width: 15%;*/
+	min-width: 300px;
 	  height: 100%;
   overflow: auto;
 /*	border:2px solid red;*/
@@ -73,21 +74,26 @@ color: #4836DC;
 
 .rightBig{
 /*	float: left;*/
-	min-width: 84.2222%;
+/*width: 85%;*/
+	min-width: 1620px;
 /*	height: 1000px;*/
 /*display: inline-block;*/
-position: absolute;
+position: fixed;
 left:  300px;
+height: 100%;
+overflow: auto;
 /*	border: 2px solid black;*/
 }
 
 .navigation{
-/*	width: 100%;*/
+		width: 85%;
 /*	border: 2px solid blue;*/
 	padding: 50px 20px 0px 20px;
 	position: fixed;
+	top: 0;
 	background-color: #F2F0FF;
-	min-width: 1600px;
+	min-width: 1620px;
+overflow: auto;
 
 }
 .navigation::after{
@@ -135,7 +141,7 @@ left:  300px;
 .search{
 	float: left;
 	width: 28%;
-	border: 2px solid green;
+/*	border: 2px solid green;*/
 	border-radius: 10px;
 /*	height: 100px;*/
 	background-color: #fff;
@@ -152,7 +158,7 @@ input[type=text]{
 .mode{
 	float: left;
 	width: 30%;
-	border: 2px solid green;
+/*	border: 2px solid green;*/
 	padding: 10px 0px 10px 130px;
 /*	height: 100px;*/
 }
@@ -174,8 +180,8 @@ input[type=text]{
 .profile{
 	
 	float: right;
-	width: 14%;
-	border: 2px solid green;
+	width: 15%;
+/*	border: 2px solid green;*/
 /*	height: 100px;*/
 }
 .profile-image{
@@ -200,9 +206,12 @@ input[type=text]{
 	font-weight: bold;
 }
 .main{
-	width: 100%;
+	position: fixed;
+	width: 85%;
 /*	border: 2px solid green;*/
 	margin-top: 180px;
+	height: 80%;
+	overflow: auto;
 	
 }
 .main::after{
@@ -211,14 +220,17 @@ input[type=text]{
 	display: table;
 }
 .withCards{
-/*	position: absolute;*/
+	position: fixed;
 	float: left;
-	min-width: 72%;
+	min-width: 60%;
 /*	border: 2px solid yellow;*/
 	padding: 0 2%;
 	color: #777;
 	font-size: 25px;
 	font-weight: bold;
+	height: 80%;
+	overflow: auto;
+	overflow-x: hidden;
 /*	margin-top: 20px;*/
 
 }
@@ -243,7 +255,7 @@ display: table;
 	min-width: 28%;
 	margin-right: 50px;
 	border-radius: 10px;
-	box-shadow: 0 4px 20px #7C76D7;
+	box-shadow: 0 4px 10px #7C76D7;
 }
 .top{
 /*	border: 2px solid white;*/
@@ -399,9 +411,12 @@ display: table;
 }
 
 .subscriptions{
-	float: left;
-/*	height: 50px;*/
-	min-width: 28%;
+/*	float: left;*/
+	position: fixed;
+	height: 80%;
+	overflow: auto;
+	min-width: 20%;
+	margin-left: 62%;
 /*	border: 2px solid red;*/
 
 	background-color: white;
@@ -478,11 +493,11 @@ display: table;
   margin-top: 20px;
   margin-left: 33px;
 }
-  #subscribers_table {
+  #subscribers_table, #vods_table {
   border-collapse: collapse;
   width: 100%;
 }
-#subscribers_table th{
+#subscribers_table th, #vods_table th{
 padding: 15px ;
 border-right: 1px solid #fff;
 font-weight: bold;
@@ -684,4 +699,33 @@ clear: both;
 .single-card, .upper-aection, .upper-aection img{
 	border-radius: 10px;
 	
+}
+nav{
+/*	border: 2px solid red;*/
+	background-color: white;
+
+}
+ul{
+	list-style-type: none;
+	display: flex;
+	justify-content: space-around;
+	
+	padding: 0;
+}
+ul li{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 16.666667%;
+	padding: 20px 0;
+}
+ul li:hover, ul li:hover a{
+	color: white;
+	background-color: #027BC4;
+}
+
+ul::after{
+	content: '';
+	clear: both;
+	display: table;
 }
