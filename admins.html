@@ -4,6 +4,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/fufaDashboardCss-home.css">
+	<link rel="stylesheet" href="css/settings.css">
+
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script src="https://kit.fontawesome.com/a372109b3a.js" crossorigin="anonymous"></script>
 	<title>Admins</title>
@@ -25,10 +27,37 @@ table div.image{
 	border-radius: 5px;
 }
 #subscribers_table td {
-  border-bottom: 1px solid #aaa;
+  border-bottom: 1px solid var(--table-bottom-border);
   padding: 5px 0 ;
   font-size: 18px;
 }
+
+.container {
+	width: 700px;
+	
+  border-radius: 10px;
+  background-color: #DBDBE6;
+  padding: 20px;
+  top: 150px;
+  display: none;
+  position: fixed;
+  
+  right: 20%;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+/*  border: 2px solid red;*/
+}
+
+.input_file input{
+        display: none;
+      }
+.input_file{
+  cursor:pointer;
+}
+.input_file #imageName{
+    color:green;
+  }
+
 </style>
 </head>
 <body>
@@ -36,7 +65,7 @@ table div.image{
 	<div class="leftSmall">
 		<div class="logo">
 			<img src="images/Fufa-logo.png" alt="logo" >
-			<hr style="border: 1px solid #DBD8F4;  margin: 10px 5% 0 5%; " >
+			<hr style="border: 1px solid var(--seperator-lines);  margin: 10px 5% 0 5%; " >
 		</div>
 
 		<div class="menu">
@@ -95,13 +124,21 @@ table div.image{
 				<i class="fa fa-search" ></i>
 				<input type="text" placeholder="Search here">
 			</div>
+			<div class="mode" >
+				
+				<div id="dark-btn" class="switch-btn">
+					<span></span>
+				</div>
+				<div>Dark mode</div>
+			</div>
 
-			<div class="adduser-subscribers_page">
+			
+			<div class="adduser-subscribers_page" onclick="openForm()">
 				<div>Add Admin</div>
 				<div><i class="fa fa-plus-circle" style="font-size: 20px;"></i></div>
 			</div>
 			<div style=" margin-top: 110px;">
-				<hr style="border: 1px solid #DBD8F4;  margin: 10px 1% 0px 1%; " >
+				<hr style="border: 1px solid var(--seperator-lines);  margin: 23px 1% 0px 1%;transition: border 1s; " >
 			</div>
 		</div>
 
@@ -202,6 +239,87 @@ table div.image{
 			</table>
 		</div>
 	</div>
+	<div class="container" id="myForm">
+        <form action="">
+        <h3> New Admin Details <span onclick="closeForm()"><i class="fa fa-close" style="color: red; float: right; margin-right: 60px; font-size: 20px"></i></span></h3>
+        
+        
+        <div class="row">
+          <div class="col-25">
+            <label for="Title">First Name</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="amount" name="amount"  >
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="Title">Last Name</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="amount" name="amount"  >
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="Title">Email</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="amount" name="amount"  >
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="description">Password</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="description" name="description"  >
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="amount">Role</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="amount" name="amount">
+          </div>
+        </div>
 
+        <div class="row">
+          <div class="col-25">
+            <label for="duration">Profile photo</label>
+          </div>
+          <div class="col-75">
+            <label class="input_file" for="inputTag">
+       
+        <i class="fa fa-2x fa-camera"></i>
+        <input id="inputTag" type="file"/>
+        <br/>
+        <span id="imageName"></span>
+      </label>
+          </div>
+        </div>
+      
+
+      
+        <div class="row" style="padding-left: 160px">
+            <input type="submit" name="submit" value="Save">
+          </div>
+        
+      
+        </form>
+      </div>
+  </div>
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+<script src="js/js_functions.js"></script>
 </body>
 </html>

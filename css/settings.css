@@ -53,6 +53,28 @@ width: 100%;
   display: table;
   clear: both;
 }
+
+input[type=submit] {
+	background-color: #027BC4;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	float: right;
+	width: 100px;
+  }
+ 
+  .container .privacy-policy{
+	background-color: white;
+	margin-left: 20%;
+	margin-right: 20%;
+	padding: 30px;
+	border-radius: 10px;
+	height: 650px;
+	overflow-y: scroll;
+	
+  } 
 	.table-data{
 		/*	border: 2px solid green;*/
 				background-color: white;
@@ -90,28 +112,7 @@ width: 100%;
 			
 		}
 
-		.privacy-policy{
-
-	background-color: grey;
-	border-radius: 15px;
 	
-	height: 800px;
-	width: 1200px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 20px;
-
-		}
-
-		.privacy-policy p{
-			border: 2px solid black;
-			text-align: center;
-			width: 1000px;
-			height: 700px;
-			margin-left: auto;
-	       margin-right: auto;
-	       margin-top: 20px;
-		}
 	
 
 

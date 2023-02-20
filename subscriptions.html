@@ -13,7 +13,7 @@
 		<div class="leftSmall">
 			<div class="logo">
 				<img src="images/Fufa-logo.png" alt="logo" >
-				<hr style="border: 1px solid #DBD8F4;  margin: 10px 5% 0 5%; " >
+				<hr style="border: 1px solid var(--seperator-lines);  margin: 23px 5% 0 5%; transition: border 1s;" >
 			</div>
 
 			<div class="menu">
@@ -65,20 +65,19 @@
 		<div class="rightBig">
 			<div class="navigation">
 				<div class="dashboard-title">
-					Dashboard
+					Subscriptions
 				</div>
 				<div class="search">
 					<i class="fa fa-search" ></i>
 					<input type="text" placeholder="Search here">
 				</div>
 				<div class="mode" >
-				
-				<label class="switch">
-					<input type="checkbox">
-					<span class="slider round"></span>
-				</label>
-				<div>Dark mode</div>
-			</div>
+                
+                <div id="dark-btn" class="switch-btn">
+                    <span></span>
+                </div>
+                <div>Dark mode</div>
+            </div>
 				<div class="profile">
 					<div class="profile-image"><img src="images/profile-image.jpg" alt=""></div>
 					<div class="profile-details">
@@ -87,7 +86,7 @@
 					</div>
 				</div>
 				<div style=" margin-top: 110px;">
-				<hr style="border: 1px solid #DBD8F4;  margin: 10px 1% 0px 1%; " >
+				<hr style="border: 1px solid var(--seperator-lines);  margin: 10px 1% 0px 1%; transition: border 1s;" >
 			</div>
 			</div>
 			
@@ -248,6 +247,6 @@
 			</table>
 			</div>
 		</div>
-	
+<script src="js/js_functions.js"></script>
 </body>
 </html>

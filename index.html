@@ -14,12 +14,12 @@
 	<div class="leftSmall">
 		<div class="logo">
 			<img src="images/Fufa-logo.png" alt="logo" >
-			<hr style="border: 1px solid #DBD8F4;  margin: 10px 5% 0 5%; " >
+			<hr style="border: 1px solid var(--seperator-lines);  margin: 23px 5% 0 5%; transition: border 1s;" >
 		</div>
 
 		<div class="menu">
 			<div class="menu-title">MENU</div>
-			<a href="index.html">
+			<a href="index.html" >
 				<div class="menu-items">
 					<div class="menu-icon"><i class="fa fa-th-large"></i></div>
 					<div class="menu-desc">Dashboard</div>
@@ -74,260 +74,257 @@
 			</div>
 			<div class="mode" >
 				
-				<label class="switch">
-					<input type="checkbox">
-					<span class="slider round"></span>
-				</label>
+				<div id="dark-btn" class="switch-btn">
+					<span></span>
+				</div>
 				<div>Dark mode</div>
 			</div>
-				<!-- <div class="mode">
-					<div>Dark Mode </div>
-					<div class="mode-toggle"><i class='fas fa-toggle-on' style='font-size:24px'></i></div>
-				</div> -->
-				<div class="profile">
-					<div class="profile-image"><img src="images/profile-image.jpg" alt=""></div>
-					<div class="profile-details">
-						<div class="profile-role">Admin</div>
-						<div class="profile-name">Mwesigwa D <span style="margin-left: 20px;"><i class="fa fa-caret-down"></i></span></div>
-					</div>
-				</div>
-				<div style=" margin-top: 110px;">
-					<hr style="border: 1px solid #DBD8F4;  margin: 10px 1% 0px 1%; " >
+
+			<div class="profile">
+				<div class="profile-image"><img src="images/profile-image.jpg" alt=""></div>
+				<div class="profile-details">
+					<div class="profile-role">Admin</div>
+					<div class="profile-name">Mwesigwa D <span style="margin-left: 20px;"><i class="fa fa-caret-down"></i></span></div>
 				</div>
 			</div>
-			
-			<div class="main">
-				<div class="withCards">
-					<div class="cards">
-						
-						<div class="card">
-							<div class="top">
-								<div>Total streams</div> <span class="stream-icon"><i class="fa fa-television	"></i></span>
-							</div>
-							<div class="bottom">
-								<div class="number">
-									200
-								</div>
-								<div class="percentage-higher">
-									95 <span>%</span> Higher than yesterday
-								</div>
-							</div>
-						</div>
-						<div class="card">
-							<div class="top">
-								<div>Total Videos</div> <span class="stream-icon"><i class="fas fa-video"></i></span>
-							</div>
-							<div class="bottom">
-								<div class="number">
-									200
-								</div>
-								<div class="percentage-higher">
-									95 <span>%</span> Higher than yesterday
-								</div>
-							</div>
-						</div>
-						<div class="card">
-							<div class="top">
-								<div>Total Users</div> <span class="stream-icon"><i class="fa fa-user-friends"></i></span>
-							</div>
-							<div class="bottom">
-								<div class="number">
-									200
-								</div>
-								<div class="percentage-higher">
-									95 <span>%</span> Higher than yesterday
-								</div>
-							</div>
-						</div>
-						
-					</div>
-					New Users
-					<div class="table-head">
-						<div>Name</div>
-						<div>Email</div>
-						<div>Account</div>
-						<div>Status</div>
-						<div>Country</div>
-					</div>
-					<div class="table-data">
-						<div class="row">
-							<div class="name-and-icon">
-								<!-- <div class="name-icon" style="background-image: url('images/profile-image.jpg');"></div><div class="column-name" style="margin-top: 10px;">Mwesigwa Daniel</div> -->
-								<img src="images/profile-image.jpg" alt="" > 
-								<div  class="name" style="float: left; width: 150px; margin: 0; padding: 0; margin-top: 5px;">Mwesigwa Daniel</div>
-							</div>
-							<div class="add-padding-top">mwesigwadi@gmail.com</div>
-							<div class="add-padding-top">Basic</div>
-							<div class="add-padding-top"><div class="status"></div></div>
-							<div class="add-padding-top">UG</div>
-						</div>
-						<div class="row">
-							<div class="name-and-icon">
-								<!-- <div class="name-icon" style="background-image: url('images/profile-image.jpg');"></div><div class="column-name" style="margin-top: 10px;">Mwesigwa Daniel</div> -->
-								<img src="images/profile-image.jpg" alt="" > 
-								<div  class="name" style="float: left; width: 150px; margin: 0; padding: 0; margin-top: 5px;">Mwesigwa Daniel</div>
-							</div>
-							<div class="add-padding-top">mwesigwadi@gmail.com</div>
-							<div class="add-padding-top">Basic</div>
-							<div class="add-padding-top"><div class="status"></div></div>
-							<div class="add-padding-top">UG</div>
-						</div>
-						<div class="row">
-							<div class="name-and-icon">
-								<!-- <div class="name-icon" style="background-image: url('images/profile-image.jpg');"></div><div class="column-name" style="margin-top: 10px;">Mwesigwa Daniel</div> -->
-								<img src="images/profile-image.jpg" alt="" > 
-								<div  class="name" style="float: left; width: 150px; margin: 0; padding: 0; margin-top: 5px;">Mwesigwa Daniel</div>
-							</div>
-							<div class="add-padding-top">mwesigwadi@gmail.com</div>
-							<div class="add-padding-top">Basic</div>
-							<div class="add-padding-top"><div class="status"></div></div>
-							<div class="add-padding-top">UG</div>
-						</div>
-						<div class="row">
-							<div class="name-and-icon">
-								<!-- <div class="name-icon" style="background-image: url('images/profile-image.jpg');"></div><div class="column-name" style="margin-top: 10px;">Mwesigwa Daniel</div> -->
-								<img src="images/profile-image.jpg" alt="" > 
-								<div  class="name" style="float: left; width: 150px; margin: 0; padding: 0; margin-top: 5px;">Mwesigwa Daniel</div>
-							</div>
-							<div class="add-padding-top">mwesigwadi@gmail.com</div>
-							<div class="add-padding-top">Basic</div>
-							<div class="add-padding-top"><div class="status"></div></div>
-							<div class="add-padding-top">UG</div>
-						</div>
-						<div class="row">
-							<div class="name-and-icon">
-								<!-- <div class="name-icon" style="background-image: url('images/profile-image.jpg');"></div><div class="column-name" style="margin-top: 10px;">Mwesigwa Daniel</div> -->
-								<img src="images/profile-image.jpg" alt="" > 
-								<div  class="name" style="float: left; width: 150px; margin: 0; padding: 0; margin-top: 5px;">Mwesigwa Daniel</div>
-							</div>
-							<div class="add-padding-top">mwesigwadi@gmail.com</div>
-							<div class="add-padding-top">Basic</div>
-							<div class="add-padding-top"><div class="status"></div></div>
-							<div class="add-padding-top">UG</div>
-						</div>
-						<div class="row">
-							<div class="name-and-icon">
-								<!-- <div class="name-icon" style="background-image: url('images/profile-image.jpg');"></div><div class="column-name" style="margin-top: 10px;">Mwesigwa Daniel</div> -->
-								<img src="images/profile-image.jpg" alt="" > 
-								<div  class="name" style="float: left; width: 150px; margin: 0; padding: 0; margin-top: 5px;">Mwesigwa Daniel</div>
-							</div>
-							<div class="add-padding-top">mwesigwadi@gmail.com</div>
-							<div class="add-padding-top">Basic</div>
-							<div class="add-padding-top"><div class="status"></div></div>
-							<div class="add-padding-top">UG</div>
-						</div>
-						<div class="row">
-							<div class="name-and-icon">
-								<!-- <div class="name-icon" style="background-image: url('images/profile-image.jpg');"></div><div class="column-name" style="margin-top: 10px;">Mwesigwa Daniel</div> -->
-								<img src="images/profile-image.jpg" alt="" > 
-								<div  class="name" style="float: left; width: 150px; margin: 0; padding: 0; margin-top: 5px;">Mwesigwa Daniel</div>
-							</div>
-							<div class="add-padding-top">mwesigwadi@gmail.com</div>
-							<div class="add-padding-top">Basic</div>
-							<div class="add-padding-top"><div class="status"></div></div>
-							<div class="add-padding-top">UG</div>
-						</div>
-						<div class="row">
-							<div class="name-and-icon">
-								<!-- <div class="name-icon" style="background-image: url('images/profile-image.jpg');"></div><div class="column-name" style="margin-top: 10px;">Mwesigwa Daniel</div> -->
-								<img src="images/profile-image.jpg" alt="" > 
-								<div  class="name" style="float: left; width: 150px; margin: 0; padding: 0; margin-top: 5px;">Mwesigwa Daniel</div>
-							</div>
-							<div class="add-padding-top">mwesigwadi@gmail.com</div>
-							<div class="add-padding-top">Basic</div>
-							<div class="add-padding-top"><div class="status"></div></div>
-							<div class="add-padding-top">UG</div>
-						</div>
-						<div class="row">
-							<div class="name-and-icon">
-								<!-- <div class="name-icon" style="background-image: url('images/profile-image.jpg');"></div><div class="column-name" style="margin-top: 10px;">Mwesigwa Daniel</div> -->
-								<img src="images/profile-image.jpg" alt="" > 
-								<div  class="name" style="float: left; width: 150px; margin: 0; padding: 0; margin-top: 5px;">Mwesigwa Daniel</div>
-							</div>
-							<div class="add-padding-top">mwesigwadi@gmail.com</div>
-							<div class="add-padding-top">Basic</div>
-							<div class="add-padding-top"><div class="status"></div></div>
-							<div class="add-padding-top">UG</div>
-						</div>
-						<div class="row">
-							<div class="name-and-icon">
-								<!-- <div class="name-icon" style="background-image: url('images/profile-image.jpg');"></div><div class="column-name" style="margin-top: 10px;">Mwesigwa Daniel</div> -->
-								<img src="images/profile-image.jpg" alt="" > 
-								<div  class="name" style="float: left; width: 150px; margin: 0; padding: 0; margin-top: 5px;">Mwesigwa Daniel</div>
-							</div>
-							<div class="add-padding-top">mwesigwadi@gmail.com</div>
-							<div class="add-padding-top">Basic</div>
-							<div class="add-padding-top"><div class="status"></div></div>
-							<div class="add-padding-top">UG</div>
-						</div>
-						
-					</div>
-				</div>
-				<div class="subscriptions">
-					<p>Total Subscriptions</p>
-					<div class="ka-graph">
-						<p class="sub">Subscriptions</p>
-						<p>$ <span style="color: #1283C8;">273 K</span></p>
-						<div class="ka-graph-img">
-							<img src="images/ka-graph.png" alt="">
-						</div>
-					</div>
-					<p>Top Subscribers</p>
-
-					<div class="top-sub-row">
-						<div class="image">
-							<img src="images/profile-image.jpg" alt="">
-						</div>
-						<div class="subscribers-detail">
-							<p>Mwesigwa Daniel</p>
-							<p>UGX 2,000</p>
-						</div>
-						<div class="button"><button>Samba</button></div>
-					</div>
-					<div class="top-sub-row">
-						<div class="image">
-							<img src="images/profile-image.jpg" alt="">
-						</div>
-						<div class="subscribers-detail">
-							<p>Mwesigwa Daniel</p>
-							<p>UGX 2,000</p>
-						</div>
-						<div class="button"><button>Samba</button></div>
-					</div>
-					<div class="top-sub-row">
-						<div class="image">
-							<img src="images/profile-image.jpg" alt="">
-						</div>
-						<div class="subscribers-detail">
-							<p>Mwesigwa Daniel</p>
-							<p>UGX 2,000</p>
-						</div>
-						<div class="button"><button>Samba</button></div>
-					</div>
-					<div class="top-sub-row">
-						<div class="image">
-							<img src="images/profile-image.jpg" alt="">
-						</div>
-						<div class="subscribers-detail">
-							<p>Mwesigwa Daniel</p>
-							<p>UGX 2,000</p>
-						</div>
-						<div class="button"><button>Samba</button></div>
-					</div>
-					<div class="top-sub-row">
-						<div class="image">
-							<img src="images/profile-image.jpg" alt="">
-						</div>
-						<div class="subscribers-detail">
-							<p>Mwesigwa Daniel</p>
-							<p>UGX 2,000</p>
-						</div>
-						<div class="button"><button>Samba</button></div>
-					</div>
-
-				</div>
+			<div style=" margin-top: 110px;">
+				<hr style="border: 1px solid var(--seperator-lines);  margin: 10px 1% 0px 1%; transition: border 1s;" >
 			</div>
 		</div>
 
-	</body>
-	</html>
+		<div class="main">
+			<div class="withCards">
+				<div class="cards">
+
+					<div class="card">
+						<div class="top">
+							<div>Total streams</div> <span class="stream-icon"><i class="fa fa-television	"></i></span>
+						</div>
+						<div class="bottom">
+							<div class="number">
+								200
+							</div>
+							<div class="percentage-higher">
+								95 <span>%</span> Higher than yesterday
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="top">
+							<div>Total Videos</div> <span class="stream-icon"><i class="fas fa-video"></i></span>
+						</div>
+						<div class="bottom">
+							<div class="number">
+								200
+							</div>
+							<div class="percentage-higher">
+								95 <span>%</span> Higher than yesterday
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="top">
+							<div>Total Users</div> <span class="stream-icon"><i class="fa fa-user-friends"></i></span>
+						</div>
+						<div class="bottom">
+							<div class="number">
+								200
+							</div>
+							<div class="percentage-higher">
+								95 <span>%</span> Higher than yesterday
+							</div>
+						</div>
+					</div>
+
+				</div>
+				New Users
+				<div class="table-head">
+					<div>Name</div>
+					<div>Email</div>
+					<div>Account</div>
+					<div>Status</div>
+					<div>Country</div>
+				</div>
+				<div class="table-data">
+					<div class="row">
+						<div class="name-and-icon">
+							<!-- <div class="name-icon" style="background-image: url('images/profile-image.jpg');"></div><div class="column-name" style="margin-top: 10px;">Mwesigwa Daniel</div> -->
+							<img src="images/profile-image.jpg" alt="" > 
+							<div  class="name" style="float: left; width: 150px; margin: 0; padding: 0; margin-top: 5px;">Mwesigwa Daniel</div>
+						</div>
+						<div class="add-padding-top">mwesigwadi@gmail.com</div>
+						<div class="add-padding-top">Basic</div>
+						<div class="add-padding-top"><div class="status"></div></div>
+						<div class="add-padding-top">UG</div>
+					</div>
+					<div class="row">
+						<div class="name-and-icon">
+							<!-- <div class="name-icon" style="background-image: url('images/profile-image.jpg');"></div><div class="column-name" style="margin-top: 10px;">Mwesigwa Daniel</div> -->
+							<img src="images/profile-image.jpg" alt="" > 
+							<div  class="name" style="float: left; width: 150px; margin: 0; padding: 0; margin-top: 5px;">Mwesigwa Daniel</div>
+						</div>
+						<div class="add-padding-top">mwesigwadi@gmail.com</div>
+						<div class="add-padding-top">Basic</div>
+						<div class="add-padding-top"><div class="status"></div></div>
+						<div class="add-padding-top">UG</div>
+					</div>
+					<div class="row">
+						<div class="name-and-icon">
+							<!-- <div class="name-icon" style="background-image: url('images/profile-image.jpg');"></div><div class="column-name" style="margin-top: 10px;">Mwesigwa Daniel</div> -->
+							<img src="images/profile-image.jpg" alt="" > 
+							<div  class="name" style="float: left; width: 150px; margin: 0; padding: 0; margin-top: 5px;">Mwesigwa Daniel</div>
+						</div>
+						<div class="add-padding-top">mwesigwadi@gmail.com</div>
+						<div class="add-padding-top">Basic</div>
+						<div class="add-padding-top"><div class="status"></div></div>
+						<div class="add-padding-top">UG</div>
+					</div>
+					<div class="row">
+						<div class="name-and-icon">
+							<!-- <div class="name-icon" style="background-image: url('images/profile-image.jpg');"></div><div class="column-name" style="margin-top: 10px;">Mwesigwa Daniel</div> -->
+							<img src="images/profile-image.jpg" alt="" > 
+							<div  class="name" style="float: left; width: 150px; margin: 0; padding: 0; margin-top: 5px;">Mwesigwa Daniel</div>
+						</div>
+						<div class="add-padding-top">mwesigwadi@gmail.com</div>
+						<div class="add-padding-top">Basic</div>
+						<div class="add-padding-top"><div class="status"></div></div>
+						<div class="add-padding-top">UG</div>
+					</div>
+					<div class="row">
+						<div class="name-and-icon">
+							<!-- <div class="name-icon" style="background-image: url('images/profile-image.jpg');"></div><div class="column-name" style="margin-top: 10px;">Mwesigwa Daniel</div> -->
+							<img src="images/profile-image.jpg" alt="" > 
+							<div  class="name" style="float: left; width: 150px; margin: 0; padding: 0; margin-top: 5px;">Mwesigwa Daniel</div>
+						</div>
+						<div class="add-padding-top">mwesigwadi@gmail.com</div>
+						<div class="add-padding-top">Basic</div>
+						<div class="add-padding-top"><div class="status"></div></div>
+						<div class="add-padding-top">UG</div>
+					</div>
+					<div class="row">
+						<div class="name-and-icon">
+							<!-- <div class="name-icon" style="background-image: url('images/profile-image.jpg');"></div><div class="column-name" style="margin-top: 10px;">Mwesigwa Daniel</div> -->
+							<img src="images/profile-image.jpg" alt="" > 
+							<div  class="name" style="float: left; width: 150px; margin: 0; padding: 0; margin-top: 5px;">Mwesigwa Daniel</div>
+						</div>
+						<div class="add-padding-top">mwesigwadi@gmail.com</div>
+						<div class="add-padding-top">Basic</div>
+						<div class="add-padding-top"><div class="status"></div></div>
+						<div class="add-padding-top">UG</div>
+					</div>
+					<div class="row">
+						<div class="name-and-icon">
+							<!-- <div class="name-icon" style="background-image: url('images/profile-image.jpg');"></div><div class="column-name" style="margin-top: 10px;">Mwesigwa Daniel</div> -->
+							<img src="images/profile-image.jpg" alt="" > 
+							<div  class="name" style="float: left; width: 150px; margin: 0; padding: 0; margin-top: 5px;">Mwesigwa Daniel</div>
+						</div>
+						<div class="add-padding-top">mwesigwadi@gmail.com</div>
+						<div class="add-padding-top">Basic</div>
+						<div class="add-padding-top"><div class="status"></div></div>
+						<div class="add-padding-top">UG</div>
+					</div>
+					<div class="row">
+						<div class="name-and-icon">
+							<!-- <div class="name-icon" style="background-image: url('images/profile-image.jpg');"></div><div class="column-name" style="margin-top: 10px;">Mwesigwa Daniel</div> -->
+							<img src="images/profile-image.jpg" alt="" > 
+							<div  class="name" style="float: left; width: 150px; margin: 0; padding: 0; margin-top: 5px;">Mwesigwa Daniel</div>
+						</div>
+						<div class="add-padding-top">mwesigwadi@gmail.com</div>
+						<div class="add-padding-top">Basic</div>
+						<div class="add-padding-top"><div class="status"></div></div>
+						<div class="add-padding-top">UG</div>
+					</div>
+					<div class="row">
+						<div class="name-and-icon">
+							<!-- <div class="name-icon" style="background-image: url('images/profile-image.jpg');"></div><div class="column-name" style="margin-top: 10px;">Mwesigwa Daniel</div> -->
+							<img src="images/profile-image.jpg" alt="" > 
+							<div  class="name" style="float: left; width: 150px; margin: 0; padding: 0; margin-top: 5px;">Mwesigwa Daniel</div>
+						</div>
+						<div class="add-padding-top">mwesigwadi@gmail.com</div>
+						<div class="add-padding-top">Basic</div>
+						<div class="add-padding-top"><div class="status"></div></div>
+						<div class="add-padding-top">UG</div>
+					</div>
+					<div class="row">
+						<div class="name-and-icon">
+							<!-- <div class="name-icon" style="background-image: url('images/profile-image.jpg');"></div><div class="column-name" style="margin-top: 10px;">Mwesigwa Daniel</div> -->
+							<img src="images/profile-image.jpg" alt="" > 
+							<div  class="name" style="float: left; width: 150px; margin: 0; padding: 0; margin-top: 5px;">Mwesigwa Daniel</div>
+						</div>
+						<div class="add-padding-top">mwesigwadi@gmail.com</div>
+						<div class="add-padding-top">Basic</div>
+						<div class="add-padding-top"><div class="status"></div></div>
+						<div class="add-padding-top">UG</div>
+					</div>
+
+				</div>
+			</div>
+			<div class="subscriptions">
+				<p>Total Subscriptions</p>
+				<div class="ka-graph">
+					<p class="sub">Subscriptions</p>
+					<p>$ <span style="color: #1283C8;">273 K</span></p>
+					<div class="ka-graph-img">
+						<img src="images/ka-graph.png" alt="">
+					</div>
+				</div>
+				<p>Top Subscribers</p>
+
+				<div class="top-sub-row">
+					<div class="image">
+						<img src="images/profile-image.jpg" alt="">
+					</div>
+					<div class="subscribers-detail">
+						<p>Mwesigwa Daniel</p>
+						<p>UGX 2,000</p>
+					</div>
+					<div class="button"><button>Samba</button></div>
+				</div>
+				<div class="top-sub-row">
+					<div class="image">
+						<img src="images/profile-image.jpg" alt="">
+					</div>
+					<div class="subscribers-detail">
+						<p>Mwesigwa Daniel</p>
+						<p>UGX 2,000</p>
+					</div>
+					<div class="button"><button>Samba</button></div>
+				</div>
+				<div class="top-sub-row">
+					<div class="image">
+						<img src="images/profile-image.jpg" alt="">
+					</div>
+					<div class="subscribers-detail">
+						<p>Mwesigwa Daniel</p>
+						<p>UGX 2,000</p>
+					</div>
+					<div class="button"><button>Samba</button></div>
+				</div>
+				<div class="top-sub-row">
+					<div class="image">
+						<img src="images/profile-image.jpg" alt="">
+					</div>
+					<div class="subscribers-detail">
+						<p>Mwesigwa Daniel</p>
+						<p>UGX 2,000</p>
+					</div>
+					<div class="button"><button>Samba</button></div>
+				</div>
+				<div class="top-sub-row">
+					<div class="image">
+						<img src="images/profile-image.jpg" alt="">
+					</div>
+					<div class="subscribers-detail">
+						<p>Mwesigwa Daniel</p>
+						<p>UGX 2,000</p>
+					</div>
+					<div class="button"><button>Samba</button></div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	
+	<script src="js/js_functions.js"></script>
+</body>
+</html>

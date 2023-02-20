@@ -4,16 +4,44 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/fufaDashboardCss-home.css">
+	<link rel="stylesheet" href="css/settings.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script src="https://kit.fontawesome.com/a372109b3a.js" crossorigin="anonymous"></script>
 	<title>Subscribers</title>
+	<style>
+				.container {
+	width: 700px;
+	
+  border-radius: 10px;
+  background-color: #DBDBE6;
+  padding: 20px;
+  top: 150px;
+  display: none;
+  position: fixed;
+  
+  right: 20%;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+/*  border: 2px solid red;*/
+}
+
+.input_file input{
+        display: none;
+      }
+.input_file{
+  cursor:pointer;
+}
+.input_file #imageName{
+    color:green;
+  }
+	</style>
 </head>
 <body>
 	
 	<div class="leftSmall">
 			<div class="logo">
 				<img src="images/Fufa-logo.png" alt="logo" >
-				<hr style="border: 1px solid #DBD8F4;  margin: 10px 5% 0 5%; " >
+				<hr style="border: 1px solid var(--seperator-lines);  margin: 23px 5% 0 5%; transition: border 1s;" >
 			</div>
 
 			<div class="menu">
@@ -71,13 +99,21 @@
 				<i class="fa fa-search" ></i>
 				<input type="text" placeholder="Search here">
 			</div>
+			<div class="mode" >
+				
+				<div id="dark-btn" class="switch-btn">
+					<span></span>
+				</div>
+				<div>Dark mode</div>
+			</div>
+
 			
-			<div class="adduser-subscribers_page">
+			<div class="adduser-subscribers_page" onclick="openForm()">
 				<div>Add user</div>
 				<div><i class="fa fa-plus-circle" style="font-size: 20px;"></i></div>
 			</div>
 			<div style=" margin-top: 110px;">
-				<hr style="border: 1px solid #DBD8F4;  margin: 10px 1% 0px 1%; " >
+				<hr style="border: 1px solid var(--seperator-lines);  margin: 10px 1% 0px 1%; transition: border 1s;" >
 			</div>
 		</div>
 
@@ -265,6 +301,78 @@
 
 		</div>
 	</div>
-	
+	<div class="container" id="myForm">
+        <form action="">
+        <h3> New Subscriber Details <span onclick="closeForm()"><i class="fa fa-close" style="color: red; float: right; margin-right: 60px; font-size: 20px"></i></span></h3>
+        
+        
+        <div class="row">
+          <div class="col-25">
+            <label for="fname">First Name</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="fname" name="fname"  >
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="lname">Last Name</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="lname" name="lname"  >
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="email">Email</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="email" name="email"  >
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="phone">Mobile No.</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="phone" name="phone"  >
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="country">Country</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="country" name="country">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="accType">Account Type</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="accType" name="accType">
+          </div>
+        </div>
+
+        <div class="row" style="padding-left: 160px">
+            <input type="submit" name="submit" value="Save">
+          </div>
+        
+      
+        </form>
+      </div>
+  </div>
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+	<script src="js/js_functions.js"></script>
 </body>
 </html>
