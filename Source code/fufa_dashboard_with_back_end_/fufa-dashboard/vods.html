@@ -4,7 +4,6 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/fufaDashboardCss-home.css">
-	<link rel="stylesheet" href="css/settings.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script src="https://kit.fontawesome.com/a372109b3a.js" crossorigin="anonymous"></script>
 	<title>VODS</title>
@@ -29,31 +28,32 @@
 			font-weight: bold;
 		}	
 		.container {
-	width: 700px;
-	
-  border-radius: 10px;
-  background-color: #DBDBE6;
-  padding: 20px;
-  top: 150px;
-  display: none;
-  position: fixed;
-  
-  right: 20%;
-  border: 3px solid #f1f1f1;
-  z-index: 9;
+			width: 700px;
+
+			border-radius: 10px;
+			background-color: #DBDBE6;
+			padding: 20px;
+			top: 150px;
+			display: none;
+			position: fixed;
+
+			right: 20%;
+			border: 3px solid #f1f1f1;
+			z-index: 9;
 /*  border: 2px solid red;*/
 }
 
 .input_file input{
-        display: none;
-      }
+	display: none;
+}
 .input_file{
-  cursor:pointer;
+	cursor:pointer;
 }
 .input_file #imageName{
-    color:green;
-  }
-	</style>
+	color:green;
+}
+
+</style>
 </head>
 <body>
 	
@@ -110,7 +110,7 @@
 		</div>
 	</div>
 	<div class="rightBig">
-		<div class="navigation">
+		<div class="navigation" style="overflow: hidden;">
 			<div class="menu-toggle" onclick="toggleMenu()">
 				<i class="fa fa-bars"></i>
 			</div>
@@ -127,7 +127,7 @@
 				<input type="text" placeholder="Search here">
 			</div>
 
-			<div class="adduser-subscribers_page" onclick="openForm()">
+			<div class="adduser-subscribers_page" onclick="openForm()" >
 				<div>Add Video</div>
 				<div><i class="fa fa-plus-circle" style="font-size: 20px;"></i></div>
 			</div>
@@ -137,12 +137,13 @@
 		</div>
 
 		<div class="main">
-			<table class="you" id="vods_table">
+			<div class="withCards" style="width: 100vw; min-width: 1000px">
+				<table class="you" id="vods_table">
 				<tr>
-					<th style="color: white;">ID</th>
-					<th style="color: white;">Image</th>
-					<th style="color: white;">Title</th>
-					<th style="color: white;">Input URL</th>
+					<th >ID</th>
+					<th >Image</th>
+					<th >Title</th>
+					<th >Input URL</th>
 					<th style="color: white; " colspan="4">Details</th>
 				</tr>
 				<tr>
@@ -154,11 +155,11 @@
 					<td><i class="fa-solid fa-trash" style="color: var(--delete-icon-color);"></i></td>
 					<td><i class="fa-regular fa-pen-to-square" style="color: var(--edit-icon-color);"></i></td>
 					<td><div class="mode" >
-				
-				<div class="switch-btn">
-					<span></span>
-				</div>
-			</div></td>
+						
+						<div class="switch-btn">
+							<span></span>
+						</div>
+					</div></td>
 				</tr>
 				<tr>
 					<td>1</td>
@@ -169,11 +170,11 @@
 					<td><i class="fa-solid fa-trash" style="color: var(--delete-icon-color);"></i></td>
 					<td><i class="fa-regular fa-pen-to-square" style="color: var(--edit-icon-color);"></i></td>
 					<td><div class="mode" >
-				
-				<div class="switch-btn">
-					<span></span>
-				</div>
-			</div></td>
+						
+						<div class="switch-btn">
+							<span></span>
+						</div>
+					</div></td>
 				</tr>
 				<tr>
 					<td>2</td>
@@ -184,11 +185,11 @@
 					<td><i class="fa-solid fa-trash" style="color: var(--delete-icon-color);"></i></td>
 					<td><i class="fa-regular fa-pen-to-square" style="color: var(--edit-icon-color);"></i></td>
 					<td><div class="mode" >
-				
-				<div class="switch-btn">
-					<span></span>
-				</div>
-			</div></td>
+						
+						<div class="switch-btn">
+							<span></span>
+						</div>
+					</div></td>
 				</tr>
 				<tr>
 					<td>3</td>
@@ -199,11 +200,11 @@
 					<td><i class="fa-solid fa-trash" style="color: var(--delete-icon-color);"></i></td>
 					<td><i class="fa-regular fa-pen-to-square" style="color: var(--edit-icon-color);"></i></td>
 					<td><div class="mode" >
-				
-				<div class="switch-btn">
-					<span></span>
-				</div>
-			</div></td>
+						
+						<div class="switch-btn">
+							<span></span>
+						</div>
+					</div></td>
 				</tr>
 				<tr>
 					<td>4</td>
@@ -214,11 +215,11 @@
 					<td><i class="fa-solid fa-trash" style="color: var(--delete-icon-color);"></i></td>
 					<td><i class="fa-regular fa-pen-to-square" style="color: var(--edit-icon-color);"></i></td>
 					<td><div class="mode" >
-				
-				<div class="switch-btn">
-					<span></span>
-				</div>
-			</div></td>
+						
+						<div class="switch-btn">
+							<span></span>
+						</div>
+					</div></td>
 				</tr>
 				<tr>
 					<td>5</td>
@@ -229,11 +230,11 @@
 					<td><i class="fa-solid fa-trash" style="color: var(--delete-icon-color);"></i></td>
 					<td><i class="fa-regular fa-pen-to-square" style="color: var(--edit-icon-color);"></i></td>
 					<td><div class="mode" >
-				
-				<div class="switch-btn">
-					<span></span>
-				</div>
-			</div></td>
+						
+						<div class="switch-btn">
+							<span></span>
+						</div>
+					</div></td>
 				</tr>
 				<tr>
 					<td>6</td>
@@ -244,157 +245,158 @@
 					<td><i class="fa-solid fa-trash" style="color: var(--delete-icon-color);"></i></td>
 					<td><i class="fa-regular fa-pen-to-square" style="color: var(--edit-icon-color);"></i></td>
 					<td><div class="mode" >
-				
-				<div class="switch-btn">
-					<span></span>
-				</div>
-			</div></td>
+						
+						<div class="switch-btn">
+							<span></span>
+						</div>
+					</div></td>
 				</tr>
 			</table>
+			</div>
 		</div>
 	</div>
 
-<div class="container" id="myForm">
-        <form action="">
-        <h3> Video Details <span onclick="closeForm()"><i class="fa fa-close" style="color: red; float: right; margin-right: 60px; font-size: 20px"></i></span></h3>
-        
-        
-        <div class="row">
-          <div class="col-25">
-            <label for="Title">Video Title</label>
-          </div>
-          <div class="col-75">
-            <input type="text" id="amount" name="amount"  >
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-25">
-            <label for="Title">Description</label>
-          </div>
-          <div class="col-75">
-            <input type="text" id="amount" name="amount"  >
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-25">
-            <label for="Title">Input URL</label>
-          </div>
-          <div class="col-75">
-            <input type="text" id="amount" name="amount"  >
-          </div>
-        </div>
-       
-        <div class="row">
-          <div class="col-25">
-            <label for="duration">Thumbnail</label>
-          </div>
-          <div class="col-75">
-            <label class="input_file" for="inputTag">
-       
-        <i class="fa fa-2x fa-camera"></i>
-        <input id="inputTag" type="file"/>
-        <br/>
-        <span id="imageName"></span>
-      </label>
-          </div>
-        </div>
-      
+	<div class="container" id="myForm">
+		<form action="">
+			<h3> Video Details <span onclick="closeForm()"><i class="fa fa-close" style="color: red; float: right; margin-right: 60px; font-size: 20px"></i></span></h3>
 
-      
-        <div class="row" style="padding-left: 160px">
-            <input type="submit" name="submit" value="Save">
-          </div>
-        
-      
-        </form>
-      </div>
-  </div>
 
-  <div class="container" id="myEditFormContainer">
-        <form action="" id="myEditForm">
-        <h3> Video Details <span onclick="closeEditForm()"><i class="fa fa-close" style="color: red; float: right; margin-right: 60px; font-size: 20px"></i></span></h3>
-        
-        
-        <div class="row">
-          <div class="col-25">
-            <label for="Title">Video Title</label>
-          </div>
-          <div class="col-75">
-            <input type="text" id="title" name="title"  >
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-25">
-            <label for="Description">Description</label>
-          </div>
-          <div class="col-75">
-            <input type="text" id="description" name="description"  >
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-25">
-            <label for="url">Input URL</label>
-          </div>
-          <div class="col-75">
-            <input type="text" id="url" name="url"  >
-          </div>
-        </div>
-       
-        <div class="row">
-          <div class="col-25">
-            <label for="Thumbnail">Thumbnail</label>
-          </div>
-          <div class="col-75">
-            <label class="input_file" for="Thumbnail">
-       
-        <i class="fa fa-2x fa-camera"></i>
-        <input id="Thumbnail" type="file"/>
-        <br/>
-        <span id="imageName"></span>
-      </label>
-          </div>
-        </div>
-      
+			<div class="row">
+				<div class="col-25">
+					<label for="Title">Video Title</label>
+				</div>
+				<div class="col-75">
+					<input type="text" id="amount" name="amount"  >
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-25">
+					<label for="Title">Description</label>
+				</div>
+				<div class="col-75">
+					<input type="text" id="amount" name="amount"  >
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-25">
+					<label for="Title">Input URL</label>
+				</div>
+				<div class="col-75">
+					<input type="text" id="amount" name="amount"  >
+				</div>
+			</div>
 
-      
-        <div class="row" style="padding-left: 160px">
-            <input type="submit" name="submit" value="Save">
-          </div>
-        
-      
-        </form>
-      </div>
-  </div>
+			<div class="row">
+				<div class="col-25">
+					<label for="duration">Thumbnail</label>
+				</div>
+				<div class="col-75">
+					<label class="input_file" for="inputTag">
+
+						<i class="fa fa-2x fa-camera"></i>
+						<input id="inputTag" type="file"/>
+						<br/>
+						<span id="imageName"></span>
+					</label>
+				</div>
+			</div>
+
+
+
+			<div class="row" style="padding-left: 160px">
+				<input type="submit" name="submit" value="Save">
+			</div>
+
+
+		</form>
+	</div>
+</div>
+
+<div class="container" id="myEditFormContainer">
+	<form action="" id="myEditForm">
+		<h3> Video Details <span onclick="closeEditForm()"><i class="fa fa-close" style="color: red; float: right; margin-right: 60px; font-size: 20px"></i></span></h3>
+
+
+		<div class="row">
+			<div class="col-25">
+				<label for="Title">Video Title</label>
+			</div>
+			<div class="col-75">
+				<input type="text" id="title" name="title"  >
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-25">
+				<label for="Description">Description</label>
+			</div>
+			<div class="col-75">
+				<input type="text" id="description" name="description"  >
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-25">
+				<label for="url">Input URL</label>
+			</div>
+			<div class="col-75">
+				<input type="text" id="url" name="url"  >
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-25">
+				<label for="Thumbnail">Thumbnail</label>
+			</div>
+			<div class="col-75">
+				<label class="input_file" for="Thumbnail">
+
+					<i class="fa fa-2x fa-camera"></i>
+					<input id="Thumbnail" type="file"/>
+					<br/>
+					<span id="imageName"></span>
+				</label>
+			</div>
+		</div>
+
+
+
+		<div class="row" style="padding-left: 160px">
+			<input type="submit" name="submit" value="Save">
+		</div>
+
+
+	</form>
+</div>
+</div>
 
 <script>
-function openForm() {
-  document.getElementById("myForm").style.display = "block";
-}
+	function openForm() {
+		document.getElementById("myForm").style.display = "block";
+	}
 
-function closeForm() {
-  document.getElementById("myForm").style.display = "none";
-}
-function closeEditForm() {
-  document.getElementById("myEditFormContainer").style.display = "none";
-}
+	function closeForm() {
+		document.getElementById("myForm").style.display = "none";
+	}
+	function closeEditForm() {
+		document.getElementById("myEditFormContainer").style.display = "none";
+	}
 </script>
 <script>
 
 	if (localStorage.getItem("theme")=="light") {
 		
-			
-			document.body.classList.remove("darktheme");
+
+		document.body.classList.remove("darktheme");
 		
-		}
-		else if (localStorage.getItem("theme")=="dark") {
-			
-			
-			document.body.classList.add("darktheme");
-			
-		}
-		else{
-			localStorage.setItem("theme","light");
-		}
+	}
+	else if (localStorage.getItem("theme")=="dark") {
+
+
+		document.body.classList.add("darktheme");
+
+	}
+	else{
+		localStorage.setItem("theme","light");
+	}
 
 	var switchBtns=document.getElementsByClassName("switch-btn");
 	var deleteIcons=document.getElementsByClassName("fa-trash");
@@ -428,9 +430,9 @@ function closeEditForm() {
 	}
 	var sidebar=document.getElementById("sidemenu");
 	function toggleMenu(){
-			sidebar.classList.toggle("hide");
+		sidebar.classList.toggle("hide");
 			// alert(sidebar.style.display);
-		}
+	}
 </script>
 
 </body>
