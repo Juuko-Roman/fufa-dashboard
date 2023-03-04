@@ -178,6 +178,7 @@ min-width: 50px;
 color: var(--icons-hover-color);
 }
 
+
 .menu-title{
 	padding-top: 40px;
 	padding-left: 40px;
@@ -876,13 +877,15 @@ min-width: 1000px;
 	background-color: var(--settings-navigation);
 	transition: background-color 1s;
 	color: var(--second-nav-text-color);
+	height: 100px;
+
 
 }
 ul{
 	list-style-type: none;
 	display: flex;
 	justify-content: space-around;
-	
+	margin: 0;
 	padding: 0;
 }
 ul li{
@@ -892,6 +895,7 @@ ul li{
 	width: 16.666667%;
 	padding: 20px 0;
 	border-radius: 5px;
+	height: 100px;
 }
 ul li:hover, ul li:hover a{
 	color: white;

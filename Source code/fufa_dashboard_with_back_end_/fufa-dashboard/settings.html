@@ -109,6 +109,10 @@ background-color: transparent;
 	clear: both;
 	display: table;
 }
+.active{
+	background-color: #027BC4;
+	color: white;
+}
 </style>
 
 </head>
@@ -154,8 +158,8 @@ background-color: transparent;
 			</a>
 			<a href="settings.html">
 				<div class="menu-items">
-					<div class="menu-icon"><i class="fa fa-cog"></i></div>
-					<div class="menu-desc">Settings</div>
+					<div class="menu-icon" style="color: var(--icons-hover-color);"><i class="fa fa-cog"></i></div>
+					<div class="menu-desc" style="color: var(--icons-hover-color);">Settings</div>
 				</div>
 			</a>
 			<a href="admins.html">
@@ -173,12 +177,12 @@ background-color: transparent;
 		
 				<nav>
 					<ul>
-						<li onclick="changeScreen(1)"><i class="fa fa-exclamation-circle"></i><br><a class="active">About</a></li>
-						<li onclick="changeScreen(2)"><i class="fa fa-clock-o"></i><br><a class="active">Updates</a></li>
-						<li onclick="changeScreen(3)"><i class="fa fa-cog"></i><br><a class="active">Cat Settings</a></li>
-						<li onclick="changeScreen(4)"><i class="fa fa-cog"></i><br><a class="active">Payment Gateway</a></li>
-						<li onclick="changeScreen(5)"><i class="fa fa-eyedropper"></i><br><a class="active">Theme settings</a></li>
-						<li onclick="changeScreen(6)"><i class="fa fa-cog"></i><br><a class="active">Privacy</a></li>
+						<li class="nav-link active" onclick="changeScreen(1)"><i class="fa fa-exclamation-circle"></i><br><a >About</a></li>
+						<li class="nav-link" onclick="changeScreen(2)"><i class="fa fa-clock-o"></i><br><a >Updates</a></li>
+						<li class="nav-link" onclick="changeScreen(3)"><i class="fa fa-cog"></i><br><a >Cat Settings</a></li>
+						<li class="nav-link" onclick="changeScreen(4)"><i class="fa fa-cog"></i><br><a >Payment Gateway</a></li>
+						<li class="nav-link" onclick="changeScreen(5)"><i class="fa fa-eyedropper"></i><br><a >Theme settings</a></li>
+						<li class="nav-link" onclick="changeScreen(6)"><i class="fa fa-cog"></i><br><a >Privacy</a></li>
 					</ul>
 				</nav>
 			
@@ -582,6 +586,19 @@ Section 1.10.33 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC
 
 		</div>
 		<script>
+			const links = document.querySelectorAll('.nav-link');
+    
+if (links.length) {
+  links.forEach((link) => {
+    link.addEventListener('click', (e) => {
+      links.forEach((link) => {
+          link.classList.remove('active');
+      });
+      e.preventDefault();
+      link.classList.add('active');
+    });
+  });
+}
 			
 
 			if (localStorage.getItem("theme")=="light") {
