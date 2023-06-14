@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/fufaDashboardCss-home.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://kit.fontawesome.com/a372109b3a.js" crossorigin="anonymous"></script>
+	<title>Subscriptions</title>
+</head>
+<body>
+	
+		<div class="leftSmall" id="sidemenu">
+			<div class="logo">
+				<img src="images/Fufa-logo.png" alt="logo" >
+				<hr style="border: 1px solid var(--seperator-lines);  margin: 23px 5% 0 5%; transition: border 1s;" >
+			</div>
+
+			<div class="menu">
+				<div class="menu-title">MENU</div>
+				<a href="index.html">
+					<div class="menu-items">
+					<div class="menu-icon"><i class="fa fa-th-large"></i></div>
+					<div class="menu-desc">Dashboard</div>
+				</div>
+				</a>
+				<a href="livestreams.html">
+				<div class="menu-items">
+					<div class="menu-icon"><i class="fa fa-television"></i></div>
+					<div class="menu-desc">Live Streams</div>
+				</div>
+				</a>
+				<a href="vods.html">
+				<div class="menu-items">
+					<div class="menu-icon"><i class="fa fa-desktop"></i></div>
+					<div class="menu-desc">Vods</div>
+				</div>
+				</a>
+				<a href="subscribers.html">
+				<div class="menu-items">
+					<div class="menu-icon"><i class="fa fa-users"></i></div>
+					<div class="menu-desc">Subscribers</div>
+				</div>
+				</a>
+				<a href="subscriptions.html">
+				<div class="menu-items">
+					<div class="menu-icon" style="color: var(--icons-hover-color);"><i class="fa fa-caret-square-o-down" aria-hidden="true"></i></div>
+					<div class="menu-desc" style="color: var(--icons-hover-color);">Subscriptions</div>
+				</div>
+				</a>
+				<a href="settings.html">
+				<div class="menu-items">
+					<div class="menu-icon"><i class="fa fa-cog"></i></div>
+					<div class="menu-desc">Settings</div>
+				</div>
+				</a>
+				<a href="admins.html">
+				<div class="menu-items">
+					<div class="menu-icon"><i class="fa-sharp fa-solid fa-shield-halved"></i></div>
+					<div class="menu-desc">Admins</div>
+				</div>
+			</a>
+			</div>
+		</div>
+		<div class="rightBig">
+			<div class="navigation">
+                <div class="menu-toggle" onclick="toggleMenu()">
+                <i class="fa fa-bars"></i>
+            </div>
+				<div class="dashboard-title">
+					Subscriptions
+				</div>
+				<div class="search">
+					<i class="fa fa-search" ></i>
+					<input type="text" placeholder="Search here">
+				</div>
+				<div class="right-align-nav">
+                <div class="mode" >
+                
+                <div id="dark-btn" class="switch-btn">
+                    <span></span>
+                </div>
+                <div>Dark mode</div>
+            </div>
+
+            <div class="profile">
+                <div class="profile-image"><img src="images/profile-image.jpg" alt=""></div>
+                <div class="profile-details">
+                    <div class="profile-role">Admin</div>
+                    <div class="profile-name">Mwesigwa D <span style="margin-left: 20px;"><i class="fa fa-caret-down"></i></span></div>
+                </div>
+            </div>
+            </div>
+				<div style=" margin-top: 110px;">
+				<hr style="border: 1px solid var(--seperator-lines);  margin: 10px 1% 0px 1%; transition: border 1s;" >
+			</div>
+			</div>
+			
+			<div class="main">
+				<table class="you" id="subscribers_table">
+				<tr  >
+           <th><input type="checkbox" id=""></th> 
+            <th>name </th>
+            <th>email </th>
+            <th>contact </th>
+            <th>Amount</th>
+            <th>paying for</th>
+            <th>payment date</th>
+            <th>paid until</th>
+            <th>payment type</th>
+           
+        </tr>
+        <tr>
+            <td><input type="checkbox" id=""></td>
+            <td>adrian joe</td>
+            <td>adrianjeo602@gmail.com</td>
+            <td>070542988</td>
+            <td>1000</td>
+            <td>SAMBA BASIC</td>
+            <td> 2022-09-15 19:22:31:168</td>
+            <td> 2022-09-15 19:22:31:168</td>
+            <td>mobilemoneyug </td>
+        </tr>
+        
+        <tr>
+            <td><input type="checkbox" id=""></td>
+            <td>mwesigwa daniel</td>
+            <td>mwesigwadi@gmail.com</td>
+            <td>070542988</td>
+            <td>1000</td>
+            <td>SAMBA BASIC</td>
+            <td> 2022-09-15 19:22:31:168</td>
+            <td> 2022-09-15 19:22:31:168</td>
+            <td>mobilemoneyug </td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" id=""></td>
+            <td>mwesigwa daniel</td>
+            <td>mwesigwadi@gmail.com</td>
+            <td>070542988</td>
+            <td>1000</td>
+            <td>SAMBA VASIC</td>
+            <td> 2022-09-15 19:22:31:168</td>
+            <td> 2022-09-15 19:22:31:168</td>
+            <td>mobilemoneyug </td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" id=""></td>
+            <td>adrian joe</td>
+            <td>adrianjeo602@gmail.com</td>
+            <td>070542988</td>
+            <td>1000</td>
+            <td>SAMBA BASIC</td>
+            <td> 2022-09-15 19:22:31:168</td>
+            <td> 2022-09-15 19:22:31:168</td>
+            <td>mobilemoneyug </td>
+        </tr>
+        
+        <tr>
+            <td><input type="checkbox" id=""></td>
+            <td>mwesigwa daniel</td>
+            <td>mwesigwadi@gmail.com</td>
+            <td>070542988</td>
+            <td>1000</td>
+            <td>SAMBA BASIC</td>
+            <td> 2022-09-15 19:22:31:168</td>
+            <td> 2022-09-15 19:22:31:168</td>
+            <td>mobilemoneyug </td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" id=""></td>
+            <td>mwesigwa daniel</td>
+            <td>mwesigwadi@gmail.com</td>
+            <td>070542988</td>
+            <td>1000</td>
+            <td>SAMBA VASIC</td>
+            <td> 2022-09-15 19:22:31:168</td>
+            <td> 2022-09-15 19:22:31:168</td>
+            <td>mobilemoneyug </td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" id=""></td>
+            <td>adrian joe</td>
+            <td>adrianjeo602@gmail.com</td>
+            <td>070542988</td>
+            <td>1000</td>
+            <td>SAMBA BASIC</td>
+            <td> 2022-09-15 19:22:31:168</td>
+            <td> 2022-09-15 19:22:31:168</td>
+            <td>mobilemoneyug </td>
+        </tr>
+        
+        <tr>
+            <td><input type="checkbox" id=""></td>
+            <td>mwesigwa daniel</td>
+            <td>mwesigwadi@gmail.com</td>
+            <td>070542988</td>
+            <td>1000</td>
+            <td>SAMBA BASIC</td>
+            <td> 2022-09-15 19:22:31:168</td>
+            <td> 2022-09-15 19:22:31:168</td>
+            <td>mobilemoneyug </td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" id=""></td>
+            <td>mwesigwa daniel</td>
+            <td>mwesigwadi@gmail.com</td>
+            <td>070542988</td>
+            <td>1000</td>
+            <td>SAMBA VASIC</td>
+            <td> 2022-09-15 19:22:31:168</td>
+            <td> 2022-09-15 19:22:31:168</td>
+            <td>mobilemoneyug </td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" id=""></td>
+            <td>adrian joe</td>
+            <td>adrianjeo602@gmail.com</td>
+            <td>070542988</td>
+            <td>1000</td>
+            <td>SAMBA BASIC</td>
+            <td> 2022-09-15 19:22:31:168</td>
+            <td> 2022-09-15 19:22:31:168</td>
+            <td>mobilemoneyug </td>
+        </tr>
+        
+        <tr>
+            <td><input type="checkbox" id=""></td>
+            <td>mwesigwa daniel</td>
+            <td>mwesigwadi@gmail.com</td>
+            <td>070542988</td>
+            <td>1000</td>
+            <td>SAMBA BASIC</td>
+            <td> 2022-09-15 19:22:31:168</td>
+            <td> 2022-09-15 19:22:31:168</td>
+            <td>mobilemoneyug </td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" id=""></td>
+            <td>mwesigwa daniel</td>
+            <td>mwesigwadi@gmail.com</td>
+            <td>070542988</td>
+            <td>1000</td>
+            <td>SAMBA VASIC</td>
+            <td> 2022-09-15 19:22:31:168</td>
+            <td> 2022-09-15 19:22:31:168</td>
+            <td>mobilemoneyug </td>
+        </tr>
+			</table>
+			</div>
+		</div>
+<script src="js/js_functions.js"></script>
+</body>
+</html>

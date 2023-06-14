@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/fufaDashboardCss-home.css">
+	<link rel="stylesheet" href="css/settings.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://kit.fontawesome.com/a372109b3a.js" crossorigin="anonymous"></script>
+	<title>Subscribers</title>
+	<style>
+				.container {
+	width: 700px;
+	
+  border-radius: 10px;
+  background-color: #DBDBE6;
+  padding: 20px;
+  top: 150px;
+  display: none;
+  position: fixed;
+  
+  right: 20%;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+/*  border: 2px solid red;*/
+}
+
+.input_file input{
+        display: none;
+      }
+.input_file{
+  cursor:pointer;
+}
+.input_file #imageName{
+    color:green;
+  }
+	</style>
+</head>
+<body>
+	
+	<div class="leftSmall" id="sidemenu">
+			<div class="logo">
+				<img src="images/Fufa-logo.png" alt="logo" >
+				<hr style="border: 1px solid var(--seperator-lines);  margin: 23px 5% 0 5%; transition: border 1s;" >
+			</div>
+
+			<div class="menu">
+				<div class="menu-title">MENU</div>
+				<a href="index.html">
+					<div class="menu-items">
+					<div class="menu-icon"><i class="fa fa-th-large"></i></div>
+					<div class="menu-desc">Dashboard</div>
+				</div>
+				</a>
+				<a href="livestreams.html">
+				<div class="menu-items">
+					<div class="menu-icon"><i class="fa fa-television"></i></div>
+					<div class="menu-desc">Live Streams</div>
+				</div>
+				</a>
+				<a href="vods.html">
+				<div class="menu-items">
+					<div class="menu-icon"><i class="fa fa-desktop"></i></div>
+					<div class="menu-desc">Vods</div>
+				</div>
+				</a>
+				<a href="subscribers.html">
+				<div class="menu-items">
+					<div class="menu-icon" style="color: var(--icons-hover-color);"><i class="fa fa-users"></i></div>
+					<div class="menu-desc" style="color: var(--icons-hover-color);">Subscribers</div>
+				</div>
+				</a>
+				<a href="subscriptions.html">
+				<div class="menu-items">
+					<div class="menu-icon"><i class="fa fa-caret-square-o-down" aria-hidden="true"></i></div>
+					<div class="menu-desc">Subscriptions</div>
+				</div>
+				</a>
+				<a href="settings.html">
+				<div class="menu-items">
+					<div class="menu-icon"><i class="fa fa-cog"></i></div>
+					<div class="menu-desc">Settings</div>
+				</div>
+				</a>
+				<a href="admins.html">
+				<div class="menu-items">
+					<div class="menu-icon"><i class="fa-sharp fa-solid fa-shield-halved"></i></div>
+					<div class="menu-desc">Admins</div>
+				</div>
+			</a>
+			</div>
+		</div>
+	<div class="rightBig">
+		<div class="navigation">
+			<div class="menu-toggle" onclick="toggleMenu()">
+				<i class="fa fa-bars"></i>
+			</div>
+			<div class="dashboard-title">
+				Subscribers
+			</div>
+			<div class="search">
+				<i class="fa fa-search" ></i>
+				<input type="text" placeholder="Search here">
+			</div>
+			<div class="right-align-nav">
+				<div class="mode" >
+				
+				<div id="dark-btn" class="switch-btn">
+					<span></span>
+				</div>
+				<div>Dark mode</div>
+			</div>
+
+			
+			<div class="adduser-subscribers_page" onclick="openForm()">
+				<div>Add user</div>
+				<div><i class="fa fa-plus-circle" style="font-size: 20px;"></i></div>
+			</div>
+		</div>
+			<div style=" margin-top: 110px;">
+				<hr style="border: 1px solid var(--seperator-lines);  margin: 10px 1% 0px 1%; transition: border 1s;" >
+			</div>
+		</div>
+
+		<div class="main">
+
+			<table id="subscribers_table">
+				<tr>
+					<th><input type="checkbox" ></th>
+					<th>Name</th>
+					<th>Email</th>
+					<th>Mobile No.</th>
+					<th>Country</th>
+					<th>Account Type</th>
+				</tr>
+				<tr>
+					<td><input type="checkbox" ></td>
+					<td>Mwesigwa Daniel</td>
+					<td>mwesigwadaniel@gmail.com</td>
+					<td>075845367</td>
+					<td>Uganda</td>
+					<td>Basic Account</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" ></td>
+					<td>Mwesigwa Daniel</td>
+					<td>mwesigwadaniel@gmail.com</td>
+					<td>075845367</td>
+					<td>Uganda</td>
+					<td>Basic Account</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" ></td>
+					<td>Mwesigwa Daniel</td>
+					<td>mwesigwadaniel@gmail.com</td>
+					<td>075845367</td>
+					<td>Uganda</td>
+					<td>Basic Account</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" ></td>
+					<td>Mwesigwa Daniel</td>
+					<td>mwesigwadaniel@gmail.com</td>
+					<td>075845367</td>
+					<td>Uganda</td>
+					<td>Basic Account</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" ></td>
+					<td>Mwesigwa Daniel</td>
+					<td>mwesigwadaniel@gmail.com</td>
+					<td>075845367</td>
+					<td>Uganda</td>
+					<td>Basic Account</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" ></td>
+					<td>Mwesigwa Daniel</td>
+					<td>mwesigwadaniel@gmail.com</td>
+					<td>075845367</td>
+					<td>Uganda</td>
+					<td>Basic Account</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" ></td>
+					<td>Mwesigwa Daniel</td>
+					<td>mwesigwadaniel@gmail.com</td>
+					<td>075845367</td>
+					<td>Uganda</td>
+					<td>Basic Account</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" ></td>
+					<td>Mwesigwa Daniel</td>
+					<td>mwesigwadaniel@gmail.com</td>
+					<td>075845367</td>
+					<td>Uganda</td>
+					<td>Basic Account</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" ></td>
+					<td>Mwesigwa Daniel</td>
+					<td>mwesigwadaniel@gmail.com</td>
+					<td>075845367</td>
+					<td>Uganda</td>
+					<td>Basic Account</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" ></td>
+					<td>Mwesigwa Daniel</td>
+					<td>mwesigwadaniel@gmail.com</td>
+					<td>075845367</td>
+					<td>Uganda</td>
+					<td>Basic Account</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" ></td>
+					<td>Mwesigwa Daniel</td>
+					<td>mwesigwadaniel@gmail.com</td>
+					<td>075845367</td>
+					<td>Uganda</td>
+					<td>Basic Account</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" ></td>
+					<td>Mwesigwa Daniel</td>
+					<td>mwesigwadaniel@gmail.com</td>
+					<td>075845367</td>
+					<td>Uganda</td>
+					<td>Basic Account</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" ></td>
+					<td>Mwesigwa Daniel</td>
+					<td>mwesigwadaniel@gmail.com</td>
+					<td>075845367</td>
+					<td>Uganda</td>
+					<td>Basic Account</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" ></td>
+					<td>Mwesigwa Daniel</td>
+					<td>mwesigwadaniel@gmail.com</td>
+					<td>075845367</td>
+					<td>Uganda</td>
+					<td>Basic Account</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" ></td>
+					<td>Mwesigwa Daniel</td>
+					<td>mwesigwadaniel@gmail.com</td>
+					<td>075845367</td>
+					<td>Uganda</td>
+					<td>Basic Account</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" ></td>
+					<td>Mwesigwa Daniel</td>
+					<td>mwesigwadaniel@gmail.com</td>
+					<td>075845367</td>
+					<td>Uganda</td>
+					<td>Basic Account</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" ></td>
+					<td>Mwesigwa Daniel</td>
+					<td>mwesigwadaniel@gmail.com</td>
+					<td>075845367</td>
+					<td>Uganda</td>
+					<td>Basic Account</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" ></td>
+					<td>Mwesigwa Daniel</td>
+					<td>mwesigwadaniel@gmail.com</td>
+					<td>075845367</td>
+					<td>Uganda</td>
+					<td>Basic Account</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" ></td>
+					<td>Mwesigwa Daniel</td>
+					<td>mwesigwadaniel@gmail.com</td>
+					<td>075845367</td>
+					<td>Uganda</td>
+					<td>Basic Account</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" ></td>
+					<td>Mwesigwa Daniel</td>
+					<td>mwesigwadaniel@gmail.com</td>
+					<td>075845367</td>
+					<td>Uganda</td>
+					<td>Basic Account</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" ></td>
+					<td>Mwesigwa Daniel</td>
+					<td>mwesigwadaniel@gmail.com</td>
+					<td>075845367</td>
+					<td>Uganda</td>
+					<td>Basic Account</td>
+				</tr>
+				
+			</table>
+
+		</div>
+	</div>
+	<div class="container" id="myForm">
+        <form action="">
+        <h3> New Subscriber Details <span onclick="closeForm()"><i class="fa fa-close" style="color: red; float: right; margin-right: 60px; font-size: 20px"></i></span></h3>
+        
+        
+        <div class="row">
+          <div class="col-25">
+            <label for="fname">First Name</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="fname" name="fname"  >
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="lname">Last Name</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="lname" name="lname"  >
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="email">Email</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="email" name="email"  >
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="phone">Mobile No.</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="phone" name="phone"  >
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="country">Country</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="country" name="country">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="accType">Account Type</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="accType" name="accType">
+          </div>
+        </div>
+
+        <div class="row" style="padding-left: 160px">
+            <input type="submit" name="submit" value="Save">
+          </div>
+        
+      
+        </form>
+      </div>
+  </div>
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+	<script src="js/js_functions.js"></script>
+</body>
+</html>
